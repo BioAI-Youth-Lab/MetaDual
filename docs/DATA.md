@@ -1,40 +1,63 @@
-# Data files and schema
+# MetaDual cohorts and feature schema
 
-| Included file | Origin / purpose |
-| --- | --- |
-| `data_processing/data/4347_final_relative_abundances.csv` | Original 903 × 4,347 abundance table, OTUs in rows |
-| `data_processing/data/fcg_results.jsonl` | Archived parsed FCGs for 4,347 samples |
-| `data_processing/data/final_features.npz` | Byte-for-byte copy of the final NPZ used by the four requested training scripts |
-| `data_processing/data/prompt_validation.csv` | Separate 277-OTU dataset plus metadata rows, 6,462 samples; used only for prompt scoring |
+## Primary cohort (Methods 4.2)
 
-The two original copies of `filtered_otu.csv` in `data/` and `data_gmhi/` are byte-identical. Only one is included.
+`data_processing/data/final_features.npz` is an unchanged copy of the final source NPZ, with 4,012 individuals across six disease groups and healthy controls. The source abundance CSV has 4,347 individuals; the >=100-per-class filter retains 4,012.
 
-## Final NPZ
+| NPZ key | Shape | dtype |
+| --- | --- | --- |
+| `sample_ids` | `(4012,)` | Unicode |
+| `otu_names` | `(903,)` | Unicode |
+| `X_otu_abundance` | `(4012, 903)` | float64 |
+| `y` | `(4012, 7)` | float64, one-hot |
+| `X_text_embedding` | `(4012, 1536)` | float32 |
 
-| Key | Shape | dtype | Meaning |
-| --- | --- | --- | --- |
-| `sample_ids` | `(4012,)` | Unicode | Ordered sample identifiers |
-| `otu_names` | `(903,)` | Unicode | Ordered OTU feature names |
-| `X_otu_abundance` | `(4012, 903)` | float64 | Per-sample relative abundance |
-| `y` | `(4012, 7)` | float64 | One-hot disease labels |
-| `X_text_embedding` | `(4012, 1536)` | float32 | First two 768-dimensional FCG batch vectors |
-
-| Class index | Label | Samples |
+| Index | Group | Individuals |
 | ---: | --- | ---: |
 | 0 | ACVD | 152 |
 | 1 | CRC | 298 |
-| 2 | Crohns disease | 108 |
+| 2 | Crohns disease (CD) | 108 |
 | 3 | Healthy | 2636 |
 | 4 | Obesity | 342 |
 | 5 | Overweight | 238 |
 | 6 | T2D | 238 |
 
-Labels are derived by removing the last underscore-delimited sample number and ordered using the original one-hot encoder's sorted categories. The 4,347-sample source includes 13 categories; the >=100 filter retains the seven above.
+The fixed test set contains 799 individuals. `4347_final_relative_abundances.csv` has species in rows and individuals in columns. `fcg_results.jsonl` contains 4,347 parsed response records with `sample_id` and `parsed_response.Functional_Collaboration_Groups`; each group contains `OTUs` and `Function`. Archived records contain 10–15 groups.
 
-Each archived FCG JSONL record contains `sample_id` and `parsed_response.Functional_Collaboration_Groups`, whose items have `OTUs` and `Function`. Archived records contain 10–15 groups. Every five nonempty function descriptions are joined with a space, embedded with BiomedBERT, and the first two vectors are retained. Missing sample vectors or missing second vectors are padded with zeros by the merger. The supplied final NPZ has no zero text rows and no non-finite values.
+## Independent cohort (Methods 4.2, Results 2.6)
 
-## Excluded intermediates
+`data_processing/data/independent_features.npz` contains 6,025 individuals and is a losslessly compressed version of the original 161,861,028-byte NPZ. Every original array, sample order and dtype was checked for identity. Actual species feature count is 2,557 despite the source filename containing `2577`.
 
-Other cohort versions, row-sum/softmax-normalized variants, duplicate processed NPZ files, disease-description embeddings, analysis figures, temporary logs, and the 162 MB embedding JSONL are excluded. The latter is reproducible from the archived FCGs and the original BiomedBERT model files. The final NPZ is preserved unchanged so training does not require regenerating those embeddings.
+| NPZ key | Shape | dtype |
+| --- | --- | --- |
+| `sample_ids` | `(6025,)` | Unicode |
+| `otu_names` | `(2557,)` | Unicode |
+| `X_otu_abundance` | `(6025, 2557)` | float64 |
+| `X_info_raw` | `(6025, 3)` | float64; compatibility metadata, not a model input |
+| `y` | `(6025, 8)` | float64, one-hot |
+| `X_text_embedding` | `(6025, 1536)` | float32 |
 
-The export contains processed inputs supplied in the workspace. It does not reconstruct upstream acquisition or merge steps that produced the abundance CSV.
+| Index | Category | Individuals |
+| ---: | --- | ---: |
+| 0 | Cancer | 312 |
+| 1 | Cardiovascular disease | 560 |
+| 2 | Digestive disease | 433 |
+| 3 | Healthy | 2613 |
+| 4 | Immune disease | 762 |
+| 5 | Infectious disease | 283 |
+| 6 | Kidney disease | 206 |
+| 7 | Metabolic disease | 856 |
+
+The fixed test set contains 1,202 individuals. Training is performed within this independent cohort; it is not zero-shot transfer from the primary cohort. The processed NPZ is bundled; its original raw abundance table and per-individual FCG responses are not bundled.
+
+## Shared functional features
+
+Each view describes the same ordered individuals. Functional descriptions are grouped in batches of five, truncated to 512 tokens, and encoded with BiomedBERT CLS representations. The first two 768-dimensional vectors are concatenated. Features are computed before training and remain fixed. Demographic metadata are not used in MetaDual's two input views.
+
+Methods 4.3 specifies Top 50 nonzero species as the input community profile; the generator and prompt evaluator use that setting by default. The bundled precomputed arrays remain unchanged and are not regenerated as part of this documentation update. Source-script parameters are preserved separately in `CODE_PROVENANCE.md` and the source manifests. Missing vectors in the original merger are padded with zeros; the supplied primary final NPZ has no all-zero text rows.
+
+## Prompt-selection data
+
+`data_processing/data/prompt_validation.csv` is the unchanged original `filtered_otu.csv`: 6,462 individuals, 277 selected OTU rows and four metadata rows. Its byte-identical copies originally existed in `data/` and `data_gmhi/`. The prompt scorer selects the four most frequent disease categories and up to 50 individuals per category using seed 42, producing 200 samples. It is not a 200-person subset defined by either final cohort's fixed test indices.
+
+Other cohort versions, transformed feature variants, redundant intermediate NPZs, large reproducible embedding JSONLs, caches and training checkpoints are excluded. The ready-to-train NPZs let readers train without LLM requests or BiomedBERT inference.

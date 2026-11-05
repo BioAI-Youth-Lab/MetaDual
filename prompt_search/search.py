@@ -24,6 +24,7 @@ class SearchConfig:
     initial_temperature: float = 1.5
     round1_temperature: float = 1.0
     round2_temperature: float = 0.5
+    pair_refinement: bool = False
 
 
 def write_rankings(directory, stage, records):
@@ -34,8 +35,9 @@ def write_rankings(directory, stage, records):
         row["rank"] = index
     directory = Path(directory)
     directory.mkdir(parents=True, exist_ok=True)
-    (directory / STAGES[stage]).write_text(json.dumps(rows, ensure_ascii=False, indent=2) + "\n")
-    pd.DataFrame(rows).to_csv(directory / Path(STAGES[stage]).with_suffix(".csv"), index=False)
+    filename = STAGES.get(stage, f"{stage}_ranked.json")
+    (directory / filename).write_text(json.dumps(rows, ensure_ascii=False, indent=2) + "\n")
+    pd.DataFrame(rows).to_csv(directory / Path(filename).with_suffix(".csv"), index=False)
     return rows
 
 
@@ -90,12 +92,14 @@ def fuse_round(records, stage, group_size, target, max_combinations, temperature
     import pandas as pd
     from prompt_search.client import chat
     directory = Path(directory)
+    directory.mkdir(parents=True, exist_ok=True)
     valid = [row for row in records if math.isfinite(row["score"]) and row["score"] >= 0]
     if len(valid) < group_size:
         write_rankings(directory, stage, [])
         return [], {"status": "insufficient_valid_parents", "target": target, "actual": 0}
     # Original notebook used batches of four in round 1 and three in round 2.
-    embeddings = embedder.mean([row["prompt_text"] for row in valid], batch_size=4 if stage == "round1" else 3)
+    embeddings = embedder.mean([row["prompt_text"] for row in valid],
+                               batch_size={"round1": 4, "round2": 3}.get(stage, 2))
     distance, ranked = rank_combinations(valid, embeddings, group_size)
     pd.DataFrame(distance, index=[r["prompt_id"] for r in valid],
                  columns=[r["prompt_id"] for r in valid]).to_csv(directory / f"{stage}_distances.csv")
@@ -158,6 +162,10 @@ def run_search(output_root, evaluation_config, config=None):
     ]:
         stages[stage], status[stage] = fuse_round(stages[parent_stage], stage, group_size, target, limit,
                                                 temperature, directory, evaluator, embedder, client, template, seen)
+    if config.pair_refinement:
+        stages["pair_refinement"], status["pair_refinement"] = fuse_round(
+            stages["round2"], "pair_refinement", 2, 3, 28, 0.2, directory,
+            evaluator, embedder, client, template, seen)
     all_results = [row for rows in stages.values() for row in rows if row["score"] >= 0]
     if all_results:
         best = max(all_results, key=lambda row: row["score"])
@@ -180,6 +188,9 @@ def main(argv=None):
     online.add_argument("--device", default="cuda")
     online.add_argument("--epochs", type=int, default=2000)
     online.add_argument("--patience", type=int, default=100)
+    online.add_argument("--preset", choices=["manuscript", "legacy"], default="manuscript",
+                        help="New manuscript runs use Top 50 and validation scoring; legacy uses Top 100 and historical test scoring")
+    online.add_argument("--pair-refinement", action="store_true", help="Optionally add the manuscript's two-parent refinement")
     args = parser.parse_args(argv)
     if args.command == "history":
         print(json.dumps(summary(args.directory), indent=2))
@@ -188,8 +199,10 @@ def main(argv=None):
         from prompt_search.evaluation import EvaluationConfig
         profile = EvaluationConfig(validation_csv=str(args.validation_csv),
                                    embed_model=args.embed_model or DEFAULT_EMBED_MODEL,
-                                   device=args.device, epochs=args.epochs, patience=args.patience)
-        print(run_search(args.output_dir, profile))
+                                   device=args.device, epochs=args.epochs, patience=args.patience,
+                                   top_k_species=50 if args.preset == "manuscript" else 100,
+                                   score_split="validation" if args.preset == "manuscript" else "test")
+        print(run_search(args.output_dir, profile, SearchConfig(pair_refinement=args.pair_refinement)))
 
 
 if __name__ == "__main__":

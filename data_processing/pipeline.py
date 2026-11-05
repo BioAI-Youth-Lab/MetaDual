@@ -49,7 +49,7 @@ def prepare(csv_path, output, min_class_count=100):
     return payload
 
 
-def generate_fcgs(csv_path, output, prompt_path, top_k=100, max_workers=20, retries=5):
+def generate_fcgs(csv_path, output, prompt_path, top_k=50, max_workers=20, retries=5):
     from prompt_search.client import chat, make_client
     client = make_client()
     template = Path(prompt_path).read_text()
@@ -157,8 +157,9 @@ def main(argv=None):
     generate_parser = commands.add_parser("generate", help="Online DeepSeek generation; requires API credentials")
     generate_parser.add_argument("--input", type=Path, default=DATA / "4347_final_relative_abundances.csv")
     generate_parser.add_argument("--output", type=Path, default=GENERATED / "fcg_results.jsonl")
-    generate_parser.add_argument("--prompt", type=Path, default=ROOT / "prompt_search/prompts/data_generation_prompt.txt")
-    generate_parser.add_argument("--top-k", type=int, default=100)
+    generate_parser.add_argument("--preset", choices=["manuscript", "legacy"], default="manuscript")
+    generate_parser.add_argument("--prompt", type=Path, default=None)
+    generate_parser.add_argument("--top-k", type=int, default=None)
     generate_parser.add_argument("--max-workers", type=int, default=20)
     generate_parser.add_argument("--retries", type=int, default=5)
     embed_parser = commands.add_parser("embed", help="Embed archived or newly generated FCG functions")
@@ -175,7 +176,10 @@ def main(argv=None):
         result = prepare(args.input, args.output, args.min_class_count)
         print(f"Saved {len(result['sample_ids'])} samples to {args.output}")
     elif args.command == "generate":
-        generate_fcgs(args.input, args.output, args.prompt, args.top_k, args.max_workers, args.retries)
+        prompt_path = args.prompt or ROOT / "prompt_search/prompts" / (
+            "best_prompt.txt" if args.preset == "manuscript" else "data_generation_prompt.txt")
+        top_k = args.top_k if args.top_k is not None else (50 if args.preset == "manuscript" else 100)
+        generate_fcgs(args.input, args.output, prompt_path, top_k, args.max_workers, args.retries)
     elif args.command == "embed":
         embed_fcgs(args.input, args.output, args.embed_model, args.device)
     else:

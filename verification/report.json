@@ -1,5 +1,5 @@
 {
-  "started_utc": "20261104T124646_388159Z",
+  "started_utc": "20261105T030508_850213Z",
   "python": "3.10.16",
   "torch": "2.7.0+cu126",
   "cuda_build": "12.6",
@@ -87,6 +87,18 @@
         "device": "cpu",
         "status": "passed"
       },
+      "abundance_only": {
+        "epochs": 1,
+        "samples": 40,
+        "device": "cpu",
+        "status": "passed"
+      },
+      "function_only": {
+        "epochs": 1,
+        "samples": 40,
+        "device": "cpu",
+        "status": "passed"
+      },
       "prompt_scorer": {
         "epochs": 1,
         "samples": 40,
@@ -124,6 +136,18 @@
           "gradient_max_absolute_error": 0.0,
           "state_dict_keys": 29
         },
+        "abundance_only": {
+          "eval_max_absolute_error": 0.0,
+          "train_max_absolute_error": 0.0,
+          "gradient_max_absolute_error": 0.0,
+          "state_dict_keys": 30
+        },
+        "function_only": {
+          "eval_max_absolute_error": 0.0,
+          "train_max_absolute_error": 0.0,
+          "gradient_max_absolute_error": 0.0,
+          "state_dict_keys": 30
+        },
         "prompt_scorer": {
           "eval_max_absolute_error": 0.0,
           "train_max_absolute_error": 0.0,
@@ -137,7 +161,7 @@
       "all_unchanged": true
     },
     "interfaces": {
-      "notebook_cells": 15,
+      "notebook_cells": 16,
       "offline_notebook_execution": "passed",
       "command_help_and_history": "passed",
       "batch_shell_syntax": "passed"

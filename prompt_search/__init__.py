@@ -1,1 +1,1 @@
-"""GMHI GCN-SA research workflow."""
+"""MetaDual: dual-view learning for microbiome multi-disease prediction."""

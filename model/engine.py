@@ -58,7 +58,10 @@ def auc_score(labels, probabilities):
     return float(roc_auc_score(labels, probabilities, average="macro", multi_class="ovr"))
 
 
-def run_experiment(data_path, output_root, model_class, config, variant="full", seed_torch=True):
+def run_experiment(data_path, output_root, model_class, config, variant="full", seed_torch=True,
+                   evaluation_split="test"):
+    if evaluation_split not in ("test", "validation"):
+        raise ValueError("evaluation_split must be test or validation")
     if min(config.epochs, config.patience, config.repeats, config.K) < 1:
         raise ValueError("epochs, patience, repeats and K must be positive")
     if config.hd < 4 or config.hd % 4:
@@ -88,11 +91,11 @@ def run_experiment(data_path, output_root, model_class, config, variant="full", 
     timestamp = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%S_%fZ")
     directory = Path(output_root).resolve() / variant / timestamp
     directory.mkdir(parents=True, exist_ok=False)
-    metadata = {"variant": variant, "data": str(Path(data_path).resolve()),
+    metadata = {"framework": "MetaDual", "variant": variant, "data": str(Path(data_path).resolve()),
                 "model_class": model_class.__name__, "config": asdict(config),
                 "fixed_test_seed": 42, "test_ratio": 0.2, "remaining_train_ratio": 0.75,
                 "protocol": "Fixed stratified test set, repeated train/validation splits",
-                "seed_torch_at_start": seed_torch}
+                "seed_torch_at_start": seed_torch, "evaluation_split": evaluation_split}
     (directory / "config.json").write_text(json.dumps(metadata, indent=2) + "\n")
     rows, perclass, matrices, predictions = [], [], [], []
     for run in range(config.repeats):
@@ -141,10 +144,12 @@ def run_experiment(data_path, output_root, model_class, config, variant="full", 
                 break
         network.load_state_dict(torch.load(checkpoint, map_location=device, weights_only=True))
         network.eval()
+        evaluation_idx = idx_test if evaluation_split == "test" else val_idx
+        evaluation_cpu = evaluation_idx.cpu().numpy()
         with torch.no_grad():
             output, _, _ = network(features_basic, features_text, adj1, adj2, config.K)
-            probabilities = output[idx_test].exp().cpu().numpy()
-        true = labels_cpu[idx_test_cpu].numpy()
+            probabilities = output[evaluation_idx].exp().cpu().numpy()
+        true = labels_cpu[evaluation_cpu].numpy()
         predicted = probabilities.argmax(1)
         report = classification_report(true, predicted, labels=classes, output_dict=True, zero_division=0)
         try:
@@ -160,12 +165,12 @@ def run_experiment(data_path, output_root, model_class, config, variant="full", 
             perclass.append({"Run": run, "Class": int(cls), **report[str(cls)]})
         matrix = confusion_matrix(true, predicted, labels=classes)
         matrices.append(matrix)
-        np.savez_compressed(run_dir / "predictions.npz", indices=idx_test_cpu.numpy(),
-                            sample_ids=data["sample_ids"][idx_test_cpu.numpy()],
+        np.savez_compressed(run_dir / "predictions.npz", indices=evaluation_cpu,
+                            sample_ids=data["sample_ids"][evaluation_cpu],
                             labels=true, predictions=predicted, probabilities=probabilities)
         pd.DataFrame(history).to_csv(run_dir / "training_history.csv", index=False)
         (run_dir / "metrics.json").write_text(json.dumps({**row, "best_epoch": best_epoch, "best_validation_loss": best}, indent=2) + "\n")
-        predictions.append((true, predicted, probabilities))
+        predictions.append((true, predicted, probabilities, evaluation_cpu))
         print(f"run={run} accuracy={row['Accuracy']:.4f} macro_auc={auc:.4f}", flush=True)
         del network, optimizer, output
     metrics = pd.DataFrame(rows)
@@ -178,13 +183,14 @@ def run_experiment(data_path, output_root, model_class, config, variant="full", 
     combined_probs = np.concatenate([p[2] for p in predictions])
     np.savetxt(directory / "predictions.txt", combined_predicted, fmt="%d")
     np.savetxt(directory / "true_labels.txt", combined_true, fmt="%d")
-    np.savetxt(directory / "sample_names.txt", np.tile(idx_test_cpu.numpy(), config.repeats), fmt="%d")
+    np.savetxt(directory / "sample_names.txt", np.concatenate([p[3] for p in predictions]), fmt="%d")
     np.savetxt(directory / "class_probs.txt", combined_probs, fmt="%.6f")
     try:
         combined_auc = auc_score(combined_true, combined_probs)
     except ValueError:
         combined_auc = float("nan")
-    summary = {"output_directory": str(directory), "mean_accuracy": float(metrics.Accuracy.mean()),
+    summary = {"output_directory": str(directory), "evaluation_split": evaluation_split,
+               "mean_accuracy": float(metrics.Accuracy.mean()),
                "accuracy_std_population": float(metrics.Accuracy.std(ddof=0)), "pooled_macro_auc": combined_auc}
     (directory / "summary.json").write_text(json.dumps(summary, indent=2) + "\n")
     return summary

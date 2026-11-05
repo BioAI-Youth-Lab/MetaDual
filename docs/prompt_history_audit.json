@@ -17,5 +17,17 @@
   ],
   "round1_raw_kept_count": 20,
   "round1_final_ranked_count": 15,
-  "note": "The original notebook manually removed five first-round candidates. Cleaned code has no deletion or refill cells."
+  "note": "The original notebook manually removed five first-round candidates. Cleaned code has no deletion or refill cells.",
+  "manuscript_alignment": {
+    "canonical_rankings_unchanged": true,
+    "legacy_top_k_species": 100,
+    "legacy_score_split": "test",
+    "new_manuscript_top_k_species": 50,
+    "new_manuscript_score_split": "validation",
+    "optional_pair_refinement": true,
+    "pair_archive": "prompt_search/history/pair_refinement",
+    "pair_archive_has_stale_baseline": true,
+    "alignment_notes": "docs/MANUSCRIPT_ALIGNMENT.md",
+    "public_method_convention": "Follow the supplied manuscript; freeze existing artifacts and retain historical settings in provenance"
+  }
 }

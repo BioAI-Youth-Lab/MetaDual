@@ -1,0 +1,33 @@
+{
+  "status": "passed",
+  "external_api_calls": 0,
+  "checks": {
+    "cohorts_and_metrics": {
+      "primary": {
+        "samples": 4012,
+        "species": 903,
+        "test_samples": 799,
+        "reported_metric_rounding": "matched"
+      },
+      "independent": {
+        "samples": 6025,
+        "species": 2557,
+        "test_samples": 1202,
+        "reported_metric_rounding": "matched"
+      }
+    },
+    "python_yaml_citation": "passed",
+    "archived_results": {
+      "settings": 45,
+      "all_copy_hashes_match": true
+    },
+    "validation_scoring_indices": "passed for two trained runs",
+    "cohort_cli_profiles_and_overrides": "both cohort CLIs trained synthetic data successfully",
+    "manuscript_prompt_preset": "Top 50, validation split and two-parent dispatch passed with stubs",
+    "new_sources_and_manuscript_unchanged": 118
+  },
+  "limits": [
+    "No full-cohort retraining or paid API requests.",
+    "Historical Top 100/test-scoring discrepancies remain documented; no retrospective scores were invented."
+  ]
+}

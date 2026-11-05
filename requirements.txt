@@ -1,4 +1,4 @@
-# Runtime versions observed in deepseek_env_got.
+# Pinned runtime versions for the MetaDual environment.
 numpy==1.26.4
 scipy==1.15.3
 pandas==2.2.3

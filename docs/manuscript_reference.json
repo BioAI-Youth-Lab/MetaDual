@@ -1,0 +1,43 @@
+{
+  "source_filename": "MetaDual_Manuscript.docx",
+  "sha256": "a2179e1b9f1a2aab5eac075748d9d177f84f4bc0d43d269d5150beabdadc89d5",
+  "title": "Learning disease-relevant relationships among individuals enables multi-disease prediction from the gut microbial abundance profiles",
+  "authors": [
+    "Tingzhi Deng",
+    "Wenwen Yu",
+    "Yuanyuan Yu",
+    "Fan Yang",
+    "Jinting Guan",
+    "Ying Wang"
+  ],
+  "status": "User-supplied manuscript; no DOI or publication date was provided.",
+  "repository": "https://github.com/BioAI-Youth-Lab/MetaDual",
+  "primary": {
+    "samples": 4012,
+    "classes": 7,
+    "test_samples": 799,
+    "macro_auc": 0.9812,
+    "macro_f1": 0.8546
+  },
+  "independent": {
+    "samples": 6025,
+    "classes": 8,
+    "test_samples": 1202,
+    "macro_auc": 0.9244,
+    "macro_f1": 0.6996
+  },
+  "method_paragraphs": {
+    "224": "The primary cohort comprised 4,012 individuals across six disease groups and a healthy control group: colorectal cancer, Crohn's disease, atherosclerotic cardiovascular disease, type 2 diabetes, obesity, and overweight (C=7, n=4012). species relative abundance profiles were obtained from publicly available metagenomic studies, with input valuesjaij=1. The cohort was split into training, validation, and test partitions using stratified sampling to preserve group proportions. The test set comprised 799 individuals and was held fixed; training and validation sets were re-partitioned across five independent runs.",
+    "225": "The independent cohort comprised 6,025 individuals across seven disease categories and a healthy control group: cancer, cardiovascular disease, digestive disease, immune disease, infectious disease, kidney disease, and metabolic disease (C = 8, n = 6025). The same framework was trained and evaluated within the independent cohort using its eight groups, with a fixed test set of 1,202 individuals. ",
+    "228": "We constructed functional profiles to represent the biological roles associated with each individual's species composition using existing biomedical knowledge. All functional descriptions were generated using DeepSeek-V3.2 (accessed via the deepseek API in 2025). Disease labels were excluded from individual-level inputs to the language model; the descriptions combined each individual's species composition and relative abundances with existing knowledge of microbial functions.",
+    "230": "For each individual i, the kspecies=50 species with the highest relative abundance among those with aij>0 were selected to form a structured community profile:",
+    "240": "A higher DG indicates that the prompts collectively span a broader range of semantic directions. Semantically diverse candidate prompts were combined and evaluated in successive rounds across combination sizes of four, three, and two prompts. Prompts were selected according to their predictive performance on the validation set. The final evolved prompt covered metabolic exchange, ecological interactions, host-barrier and immune-related processes, and substrate utilization.",
+    "249": "For each individual, the functional descriptions of the FCGs were grouped in their original order into batches of five and encoded using BiomedBERT[17]. Each batch \u03c4ib was truncated to 512 tokens and encoded using the CLS token of BiomedBERT's final layer:",
+    "251": "where b indexes the batches within individual i's description, and ECLS denotes extraction of the final-layer CLS representation. The functional profile for individual i was formed by concatenating the representations of the first two batches:",
+    "262": "For each profile typev\u2208{abun,func}, pairwise dissimilarity is computed using the Bray\u2013Curtis metric[44], which accommodates the negative coordinates present in functional profile vectors:",
+    "280": "Affinities are computed from the original input profiles using M pairs of projection matrices, with contributions summed across all M heads:",
+    "288": "Fixed-graph propagation is applied at depths q\u2208{2,3} without additional learnable weights at each depth, carrying the cohort-level context through the observed neighborhood structure:",
+    "363": "The species-level relative abundance profiles and associated sample metadata used in this study were obtained from the public datasets of Gupta et al.[51] and Sun et al. [1]. The underlying shotgun metagenomic sequencing data are available through NCBI SRA, ENA and DDBJ under accession numbers PRJDB3601, ERP023883, PRJEB10878, PRJEB11532, PRJEB12123, PRJEB1220, PRJEB12449, PRJEB12947, PRJEB13870, PRJEB15371, PRJEB1690, PRJEB1786, PRJEB19090, PRJEB21528, PRJEB23052, PRJEB28384, PRJEB28545, PRJEB29127, PRJEB29373, PRJEB4336, PRJEB6070, PRJEB6337, PRJEB6456, PRJEB6997, PRJEB7774, PRJEB8094, PRJNA177201, PRJNA268964, PRJNA278393, PRJNA290729, PRJNA299502, PRJNA305507, PRJNA319574, PRJNA328899, PRJNA356225, PRJNA373879, PRJNA385949, PRJNA389280, PRJNA391226, PRJNA401385, PRJNA422434, PRJNA429990, PRJNA431482, PRJNA433459, PRJNA449784, PRJNA453965, PRJNA48479, PRJNA530339, PRJNA530971, PRJNA532888, PRJNA539850, PRJNA588035, PRJNA602729, PRJNA650244, PRJNA686821, PRJNA688881 and PRJNA763023, and through the China Nucleotide Sequence Archive (CNSA) under accession numbers CNP0000048, CNP0000175, CNP0000284, CNP0000334, CNP0002640 and CNP0002641.",
+    "365": "All codes can be found on GitHub at https://github.com/BioAI-Youth-Lab/MetaDual and are freely available under the permissive MIT license."
+  }
+}

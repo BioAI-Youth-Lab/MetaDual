@@ -21,5 +21,6 @@
     "safetensors": "0.5.3",
     "huggingface-hub": "0.31.1"
   },
-  "note": "Observed environment; required direct dependencies are pinned in requirements files. No machine prefixes or credentials are exported."
+  "note": "Observed environment; required direct dependencies are pinned in requirements files. No machine prefixes or credentials are exported.",
+  "project_environment": "MetaDual"
 }

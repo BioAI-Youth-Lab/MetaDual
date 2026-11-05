@@ -1,0 +1,36 @@
+cff-version: 1.2.0
+message: "If you use MetaDual, please cite the accompanying manuscript listed in the README."
+title: "MetaDual: learning disease-relevant relationships for multi-disease prediction"
+type: software
+repository-code: "https://github.com/BioAI-Youth-Lab/MetaDual"
+license: MIT
+authors:
+  - family-names: Deng
+    given-names: Tingzhi
+  - family-names: Yu
+    given-names: Wenwen
+  - family-names: Yu
+    given-names: Yuanyuan
+  - family-names: Yang
+    given-names: Fan
+  - family-names: Guan
+    given-names: Jinting
+  - family-names: Wang
+    given-names: Ying
+preferred-citation:
+  type: unpublished
+  title: "Learning disease-relevant relationships among individuals enables multi-disease prediction from the gut microbial abundance profiles"
+  authors:
+    - family-names: Deng
+      given-names: Tingzhi
+    - family-names: Yu
+      given-names: Wenwen
+    - family-names: Yu
+      given-names: Yuanyuan
+    - family-names: Yang
+      given-names: Fan
+    - family-names: Guan
+      given-names: Jinting
+    - family-names: Wang
+      given-names: Ying
+  notes: "User-supplied manuscript; publication date and DOI were not provided."

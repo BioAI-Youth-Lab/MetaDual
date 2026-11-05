@@ -1,4 +1,4 @@
-name: deepseek_env_got
+name: MetaDual
 channels:
   - conda-forge
 dependencies:

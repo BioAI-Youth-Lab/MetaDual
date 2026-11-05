@@ -232,8 +232,9 @@ def check_prompts(work):
     api = StubClient([markdown] * 200)
     captured = {}
     original_train = evaluation.run_experiment
-    def mock_training(path, output, model_class, config, variant, seed_torch):
+    def mock_training(path, output, model_class, config, variant, seed_torch, evaluation_split="test"):
         captured.update(asdict(config))
+        assert evaluation_split == "validation"
         assert not seed_torch and variant == "prompt_scorer"
         with np.load(path) as data:
             assert data["X_text_embedding"].shape == (200, 1536)
@@ -287,7 +288,7 @@ def check_training(work):
 def check_notebook_and_cli(work):
     import nbformat
     from nbclient import NotebookClient
-    notebook_path = ROOT / "prompt_search/manual_prompt_search_agg_no.ipynb"
+    notebook_path = ROOT / "prompt_search/prompt_search_agg_no.ipynb"
     notebook = nbformat.read(notebook_path, as_version=4)
     nbformat.validate(notebook)
     for cell in notebook.cells:
@@ -314,7 +315,7 @@ def check_security_and_files():
     forbidden = []
     big = []
     for path in ROOT.rglob("*"):
-        if not path.is_file() or "work" in path.relative_to(ROOT).parts:
+        if not path.is_file() or "work" in path.relative_to(ROOT).parts or ".git" in path.relative_to(ROOT).parts:
             continue
         if path.stat().st_size > 100 * 1024 * 1024:
             big.append(str(path.relative_to(ROOT)))
@@ -350,7 +351,7 @@ def main():
     report["checks"]["prompts"] = check_prompts(work)
     print("Prompt archive and offline orchestration passed", flush=True)
     report["checks"]["training"] = check_training(work)
-    print("Five model CPU smoke runs passed", flush=True)
+    print("MetaDual variants and prompt scorer CPU smoke runs passed", flush=True)
     if args.source_root:
         report["checks"]["original_numerical_comparison"] = compare_sources(args.source_root)
         manifest_path = ROOT / "docs/source_manifest.json"

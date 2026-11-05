@@ -1,0 +1,21 @@
+{
+  "cohort": "primary",
+  "data": "data_processing/data/final_features.npz",
+  "training": {
+    "seed": 42,
+    "epochs": 3000,
+    "lr": 0.02,
+    "wd": 0.0005,
+    "hd": 768,
+    "dropout": 0.5,
+    "epsilon": 0.9,
+    "r": 3,
+    "K": 3,
+    "patience": 300,
+    "repeats": 5,
+    "k_neighbors": 20,
+    "metric": "braycurtis",
+    "device": "cuda"
+  },
+  "provenance": "Portable source-script defaults. Historical run commands are not fully archived; reported metrics are separate immutable records."
+}

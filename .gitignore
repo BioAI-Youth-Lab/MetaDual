@@ -16,3 +16,5 @@ outputs/
 *.tmp
 verification/work/
 .pytest_cache/
+# Local terminal output accidentally saved during the initial upload.
+/sing and prompt search workflow"

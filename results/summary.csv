@@ -1,0 +1,46 @@
+cohort,method,view,macro_auc,macro_f1,accuracy,source_file
+primary,GAT,combined,0.6718886651066773,0.25497060918534,0.3987484355444305,results/primary/GAT/metrics_summary.csv
+primary,GAT,function,0.5663746231646888,0.09969706939989882,0.1409261576971214,results/primary/GAT_noabundance/metrics_summary.csv
+primary,GAT,abundance,0.6462928670059522,0.22383767809617852,0.40600750938673347,results/primary/GAT_nodeepseek/metrics_summary.csv
+primary,GCN,combined,0.7104696270449161,0.2718491111268228,0.4362953692115144,results/primary/GCN/metrics_summary.csv
+primary,GCN,function,0.5691195659717676,0.11879039995533129,0.14893617021276598,results/primary/GCN_noabundance/metrics_summary.csv
+primary,GCN,abundance,0.6611964127951703,0.25273495737712126,0.42853566958698375,results/primary/GCN_nodeepseek/metrics_summary.csv
+primary,MLP,combined,0.7315494298079235,0.3109165410178295,0.48310387984981223,results/primary/MLP/metrics_summary.csv
+primary,MLP,function,0.5764138393367393,0.035574591588617435,0.10137672090112641,results/primary/MLP_noabundance/metrics_summary.csv
+primary,MLP,abundance,0.739539218616699,0.32609814830900297,0.5078848560700877,results/primary/MLP_nodeepseek/metrics_summary.csv
+primary,Meta-Spec,combined,0.6911328949231454,0.18514025747391394,0.6600750938673341,results/primary/Meta-Spec/metrics_summary.csv
+primary,Meta-Spec,function,0.5941608497759742,0.12044950153208142,0.6558197747183979,results/primary/Meta-Spec_noabundance/metrics_summary.csv
+primary,Meta-Spec,abundance,0.7918083791144166,0.2786112834096871,0.6715894868585732,results/primary/Meta-Spec_nodeepseek/metrics_summary.csv
+primary,MetaDual_no_modifiedt_1,combined,0.7860789860577622,0.12538315581460457,0.6563204005006258,results/primary/MetaDual_no_modifiedt_1/metrics_summary.csv
+primary,MetaDual_no_modifiedt_2,combined,0.7492447218282031,0.14835946121380175,0.6645807259073842,results/primary/MetaDual_no_modifiedt_2/metrics_summary.csv
+primary,MetaDual_no_structure,combined,0.9754741258011732,0.8102922518546863,0.9354192740926157,results/primary/MetaDual_no_structure/metrics_summary.csv
+primary,MixHop,combined,0.7535513698788483,0.3355576120213133,0.532665832290363,results/primary/Mixhop/metrics_summary.csv
+primary,MixHop,function,0.5223384078124811,0.09879749267847716,0.1799749687108886,results/primary/Mixhop_noabundance/metrics_summary.csv
+primary,MixHop,abundance,0.7376691551778124,0.3291785824529747,0.4843554443053818,results/primary/Mixhop_nodeepseek/metrics_summary.csv
+primary,MetaDual,combined,0.9812156157646383,0.854633620915503,0.948936170212766,results/primary/Ours/metrics_summary.csv
+primary,MetaDual,function,0.8744189394291342,0.4194490344394148,0.7889862327909888,results/primary/Ours_noabundance/metrics_summary.csv
+primary,MetaDual,abundance,0.9191599525426124,0.35314728655240046,0.7659574468085106,results/primary/Ours_nodeepseek/metrics_summary.csv
+primary,Random forest,combined,0.773626709620982,0.2579401187649385,0.6565707133917397,results/primary/Random_Forest/metrics_summary.csv
+primary,Random forest,function,0.5753781581584494,0.11355311355311355,0.6595744680851063,results/primary/Random_Forest_noabundance/metrics_summary.csv
+primary,Random forest,abundance,0.7866093431534276,0.3140557091880569,0.6377972465581978,results/primary/Random_Forest_nodeepseek/metrics_summary.csv
+independent,GAT,combined,0.6878707179658152,0.24338666411202814,0.2540765391014975,results/independent/GAT/metrics_summary.csv
+independent,GAT,function,0.5537555770714226,0.09192039538594046,0.10765391014975041,results/independent/GAT_noabundance/metrics_summary.csv
+independent,GAT,abundance,0.6518278140962146,0.1575835654911087,0.1492512479201331,results/independent/GAT_nodeepseek/metrics_summary.csv
+independent,GCN,combined,0.6916129029554228,0.24394664885569473,0.254242928452579,results/independent/GCN/metrics_summary.csv
+independent,GCN,function,0.5541187455723436,0.11362443292444688,0.12029950083194677,results/independent/GCN_noabundance/metrics_summary.csv
+independent,GCN,abundance,0.6744606936869088,0.19075859985299953,0.18502495840266225,results/independent/GCN_nodeepseek/metrics_summary.csv
+independent,MLP,combined,0.830350679612275,0.4299267076769363,0.4186356073211314,results/independent/MLP/metrics_summary.csv
+independent,MLP,function,0.5419476032666373,0.027833786576013885,0.10648918469217969,results/independent/MLP_noabundance/metrics_summary.csv
+independent,MLP,abundance,0.8314062640394735,0.4365817910902169,0.42995008319467554,results/independent/MLP_nodeepseek/metrics_summary.csv
+independent,Meta-Spec,combined,0.7636990803964064,0.25272228839840516,0.4530782029950083,results/independent/Meta-Spec/metrics_summary.csv
+independent,Meta-Spec,function,0.5834233533779002,0.0787422600515246,0.4336106489184692,results/independent/Meta-Spec_noabundance/metrics_summary.csv
+independent,Meta-Spec,abundance,0.8275915588759499,0.38915313996532336,0.4996672212978369,results/independent/Meta-Spec_nodeepseek/metrics_summary.csv
+independent,MixHop,combined,0.8138643347440313,0.42567072197262357,0.4331114808652246,results/independent/Mixhop/metrics_summary.csv
+independent,MixHop,function,0.5083878854010058,0.06074471847097964,0.07886855241264559,results/independent/Mixhop_noabundance/metrics_summary.csv
+independent,MixHop,abundance,0.8081294748731122,0.40303922556996075,0.3772046589018303,results/independent/Mixhop_nodeepseek/metrics_summary.csv
+independent,MetaDual,combined,0.9243738895187172,0.6995701552641542,0.6860232945091513,results/independent/Ours/metrics_summary.csv
+independent,MetaDual,function,0.8150471710810668,0.2389766885731844,0.5332778702163061,results/independent/Ours_noabundance/metrics_summary.csv
+independent,MetaDual,abundance,0.9040489045050621,0.4728612922108648,0.6108153078202995,results/independent/Ours_nodeepseek/metrics_summary.csv
+independent,Random forest,combined,0.8147386125495008,0.43460527496976376,0.47687188019966725,results/independent/Random_Forest/metrics_summary.csv
+independent,Random forest,function,0.5711072010688769,0.08577773899882449,0.4251247920133111,results/independent/Random_Forest_noabundance/metrics_summary.csv
+independent,Random forest,abundance,0.8153229523491206,0.43943097789728,0.4720465890183029,results/independent/Random_Forest_nodeepseek/metrics_summary.csv

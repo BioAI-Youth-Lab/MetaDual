@@ -1,0 +1,1158 @@
+{
+  "manuscript_sha256": "a2179e1b9f1a2aab5eac075748d9d177f84f4bc0d43d269d5150beabdadc89d5",
+  "sources": [
+    {
+      "source": "GCN_version_nature_data_gmhi/GCN-SA-main/mult_result/GAT/metrics_per_fold.csv",
+      "sha256": "ffbacb97c4f7f5f9eec174a5a8ba732368874a0025e78cc93388f36cd28d2eeb",
+      "destination": "results/primary/GAT/metrics_per_fold.csv"
+    },
+    {
+      "source": "GCN_version_nature_data_gmhi/GCN-SA-main/mult_result/GAT/metrics_summary.csv",
+      "sha256": "75f22c59253f277834bfd1bdba41f8e73fb30247daeb8413202d0e1d546af3df",
+      "destination": "results/primary/GAT/metrics_summary.csv"
+    },
+    {
+      "source": "GCN_version_nature_data_gmhi/GCN-SA-main/mult_result/GAT_noabundance/metrics_per_fold.csv",
+      "sha256": "e1d60f1930420125e15dfc1700ea447a04cd04a700b0c389f3c84bf7b636e525",
+      "destination": "results/primary/GAT_noabundance/metrics_per_fold.csv"
+    },
+    {
+      "source": "GCN_version_nature_data_gmhi/GCN-SA-main/mult_result/GAT_noabundance/metrics_summary.csv",
+      "sha256": "13e27fbfcba5063d7d52d65efe987ee469d9cf485caf8d3eb6d5cb637648a1a1",
+      "destination": "results/primary/GAT_noabundance/metrics_summary.csv"
+    },
+    {
+      "source": "GCN_version_nature_data_gmhi/GCN-SA-main/mult_result/GAT_nodeepseek/metrics_per_fold.csv",
+      "sha256": "6e0751470aac1f12a5365956ddf4be1d4e084535392ac4c35f88ef8d9e757248",
+      "destination": "results/primary/GAT_nodeepseek/metrics_per_fold.csv"
+    },
+    {
+      "source": "GCN_version_nature_data_gmhi/GCN-SA-main/mult_result/GAT_nodeepseek/metrics_summary.csv",
+      "sha256": "4ec42cdbcde41553ee320f56e0d6703a4ee34d111ebe7144c4081582036b0c40",
+      "destination": "results/primary/GAT_nodeepseek/metrics_summary.csv"
+    },
+    {
+      "source": "GCN_version_nature_data_gmhi/GCN-SA-main/mult_result/GCN/metrics_per_class.csv",
+      "sha256": "0257a449a91a9de89f5fc47aea6f45de27a5be5426dd0034e203858c06f38baf",
+      "destination": "results/primary/GCN/metrics_per_class.csv"
+    },
+    {
+      "source": "GCN_version_nature_data_gmhi/GCN-SA-main/mult_result/GCN/metrics_per_fold.csv",
+      "sha256": "faddc466879684aa62c86ec2fc240b8c64132ba08dc9a9883dff08156fb26ca5",
+      "destination": "results/primary/GCN/metrics_per_fold.csv"
+    },
+    {
+      "source": "GCN_version_nature_data_gmhi/GCN-SA-main/mult_result/GCN/metrics_summary.csv",
+      "sha256": "21dde4214a0d50a39ce72f9d73a0b8180e08478f3d88758d56ba39aa1ebc92ee",
+      "destination": "results/primary/GCN/metrics_summary.csv"
+    },
+    {
+      "source": "GCN_version_nature_data_gmhi/GCN-SA-main/mult_result/GCN_noabundance/metrics_per_class.csv",
+      "sha256": "6e637a63c4d006045b6f26a9e39751c307d54053240463fd596799738b565655",
+      "destination": "results/primary/GCN_noabundance/metrics_per_class.csv"
+    },
+    {
+      "source": "GCN_version_nature_data_gmhi/GCN-SA-main/mult_result/GCN_noabundance/metrics_per_fold.csv",
+      "sha256": "768a09dd44938b507a1f03bd5c69d57e578e744027b42be5f1c23f67d71994e1",
+      "destination": "results/primary/GCN_noabundance/metrics_per_fold.csv"
+    },
+    {
+      "source": "GCN_version_nature_data_gmhi/GCN-SA-main/mult_result/GCN_noabundance/metrics_summary.csv",
+      "sha256": "0bcf22ad90c824bb211524c038ac819d4fe17132f51985cc5488903dcd3738b3",
+      "destination": "results/primary/GCN_noabundance/metrics_summary.csv"
+    },
+    {
+      "source": "GCN_version_nature_data_gmhi/GCN-SA-main/mult_result/GCN_nodeepseek/metrics_per_class.csv",
+      "sha256": "02c7b81be2b002b3eb519368a32260fd19ec9c37b208889552cd968215126d77",
+      "destination": "results/primary/GCN_nodeepseek/metrics_per_class.csv"
+    },
+    {
+      "source": "GCN_version_nature_data_gmhi/GCN-SA-main/mult_result/GCN_nodeepseek/metrics_per_fold.csv",
+      "sha256": "667e7276beeb36288c7681f827bbb89f09e46dfe449b81f9e55a32e94440d43b",
+      "destination": "results/primary/GCN_nodeepseek/metrics_per_fold.csv"
+    },
+    {
+      "source": "GCN_version_nature_data_gmhi/GCN-SA-main/mult_result/GCN_nodeepseek/metrics_summary.csv",
+      "sha256": "8b96fdf0cd57ba9801e05eb6312c679c9d9090152ae110c8947d4002da021606",
+      "destination": "results/primary/GCN_nodeepseek/metrics_summary.csv"
+    },
+    {
+      "source": "GCN_version_nature_data_gmhi/GCN-SA-main/mult_result/MLP/metrics_per_fold.csv",
+      "sha256": "35c17d286bc30c0adc46242cfa40a2b234202dbeea667e107a42b539a5e2ca07",
+      "destination": "results/primary/MLP/metrics_per_fold.csv"
+    },
+    {
+      "source": "GCN_version_nature_data_gmhi/GCN-SA-main/mult_result/MLP/metrics_summary.csv",
+      "sha256": "fe51f8510e340a5a84ffaa8beb294432f887c5f0c3942150f7b71f15ee96a2a7",
+      "destination": "results/primary/MLP/metrics_summary.csv"
+    },
+    {
+      "source": "GCN_version_nature_data_gmhi/GCN-SA-main/mult_result/MLP_noabundance/metrics_per_fold.csv",
+      "sha256": "2e505549b27ff4beab62f08ad74251899e3206b69bfc0399ec5101d4e1b91429",
+      "destination": "results/primary/MLP_noabundance/metrics_per_fold.csv"
+    },
+    {
+      "source": "GCN_version_nature_data_gmhi/GCN-SA-main/mult_result/MLP_noabundance/metrics_summary.csv",
+      "sha256": "a3403c77b9ca0298fea04bcc61074b0759a82a0e5cc2ab9127822d039098dea9",
+      "destination": "results/primary/MLP_noabundance/metrics_summary.csv"
+    },
+    {
+      "source": "GCN_version_nature_data_gmhi/GCN-SA-main/mult_result/MLP_nodeepseek/metrics_per_fold.csv",
+      "sha256": "43da4797cfb35b5d60289e0921f33a7f1bb1ba97e4c7beae699a94243e748020",
+      "destination": "results/primary/MLP_nodeepseek/metrics_per_fold.csv"
+    },
+    {
+      "source": "GCN_version_nature_data_gmhi/GCN-SA-main/mult_result/MLP_nodeepseek/metrics_summary.csv",
+      "sha256": "f86f3683c6ebfbdfbb05dd5d854dc3455b30732ae5b2342fb5e991c4be2505e8",
+      "destination": "results/primary/MLP_nodeepseek/metrics_summary.csv"
+    },
+    {
+      "source": "GCN_version_nature_data_gmhi/GCN-SA-main/mult_result/Meta-Spec/metrics_per_fold.csv",
+      "sha256": "cb847e588c1592f14f903f70bb60cf936c9f6697f112ef1e5fa35e3d1bcb3204",
+      "destination": "results/primary/Meta-Spec/metrics_per_fold.csv"
+    },
+    {
+      "source": "GCN_version_nature_data_gmhi/GCN-SA-main/mult_result/Meta-Spec/metrics_summary.csv",
+      "sha256": "b9d0190c5d30df59628fb2140f236e11db140d33cfd5dcfb3275c6fc712ac67a",
+      "destination": "results/primary/Meta-Spec/metrics_summary.csv"
+    },
+    {
+      "source": "GCN_version_nature_data_gmhi/GCN-SA-main/mult_result/Meta-Spec/per_class_metrics_per_fold.csv",
+      "sha256": "4594cdea6cf7fd9600c6ee4a058ed16ee61a10e36900ad7da3a105c5a5723833",
+      "destination": "results/primary/Meta-Spec/per_class_metrics_per_fold.csv"
+    },
+    {
+      "source": "GCN_version_nature_data_gmhi/GCN-SA-main/mult_result/Meta-Spec_noabundance/metrics_per_fold.csv",
+      "sha256": "08cc312667b0213fd92fd0a2843eb1bdc6b0c6eab0f48a01a304bf453d85566b",
+      "destination": "results/primary/Meta-Spec_noabundance/metrics_per_fold.csv"
+    },
+    {
+      "source": "GCN_version_nature_data_gmhi/GCN-SA-main/mult_result/Meta-Spec_noabundance/metrics_summary.csv",
+      "sha256": "a4a99aaacbcd086203aa10250cfefea6549c46132d84932d8d97d4662a48cf95",
+      "destination": "results/primary/Meta-Spec_noabundance/metrics_summary.csv"
+    },
+    {
+      "source": "GCN_version_nature_data_gmhi/GCN-SA-main/mult_result/Meta-Spec_noabundance/per_class_metrics_per_fold.csv",
+      "sha256": "0b6b49178a65866f284855bf836b02b374e124b004ef263c248f5a62559c6bd1",
+      "destination": "results/primary/Meta-Spec_noabundance/per_class_metrics_per_fold.csv"
+    },
+    {
+      "source": "GCN_version_nature_data_gmhi/GCN-SA-main/mult_result/Meta-Spec_nodeepseek/metrics_per_fold.csv",
+      "sha256": "333b2d29c5c316ab480066b1dd400b00bea850dd603af76f86a4ab870d67c7cc",
+      "destination": "results/primary/Meta-Spec_nodeepseek/metrics_per_fold.csv"
+    },
+    {
+      "source": "GCN_version_nature_data_gmhi/GCN-SA-main/mult_result/Meta-Spec_nodeepseek/metrics_summary.csv",
+      "sha256": "08463817927be37ab1f37cc5612bc6e18ebbfc74fb8cd79d3c2740d71d881c63",
+      "destination": "results/primary/Meta-Spec_nodeepseek/metrics_summary.csv"
+    },
+    {
+      "source": "GCN_version_nature_data_gmhi/GCN-SA-main/mult_result/Meta-Spec_nodeepseek/per_class_metrics_per_fold.csv",
+      "sha256": "eab58cef28280f34cec0faa18e7c7ac4013bf6a687d2f731983d5d424f9deaf0",
+      "destination": "results/primary/Meta-Spec_nodeepseek/per_class_metrics_per_fold.csv"
+    },
+    {
+      "source": "GCN_version_nature_data_gmhi/GCN-SA-main/mult_result/Mixhop/metrics_per_fold.csv",
+      "sha256": "75d1fef272a617cf614f0be649c48b6cb0f84fde7565d9ae666fc90215850d6f",
+      "destination": "results/primary/Mixhop/metrics_per_fold.csv"
+    },
+    {
+      "source": "GCN_version_nature_data_gmhi/GCN-SA-main/mult_result/Mixhop/metrics_summary.csv",
+      "sha256": "d3910af400525754689fac09c3c0970ae589f2c29fdd24854d8305ab34e26d6f",
+      "destination": "results/primary/Mixhop/metrics_summary.csv"
+    },
+    {
+      "source": "GCN_version_nature_data_gmhi/GCN-SA-main/mult_result/Mixhop_noabundance/metrics_per_fold.csv",
+      "sha256": "dddf8058a078ccab2832453f52fa0488e5492f04f5a21dd1c2478ad9295910d0",
+      "destination": "results/primary/Mixhop_noabundance/metrics_per_fold.csv"
+    },
+    {
+      "source": "GCN_version_nature_data_gmhi/GCN-SA-main/mult_result/Mixhop_noabundance/metrics_summary.csv",
+      "sha256": "687902f80037050bad1a911e07e04b1ee23f0feaf62e9a0d643366e892496aa5",
+      "destination": "results/primary/Mixhop_noabundance/metrics_summary.csv"
+    },
+    {
+      "source": "GCN_version_nature_data_gmhi/GCN-SA-main/mult_result/Mixhop_nodeepseek/metrics_per_fold.csv",
+      "sha256": "ebbf44828fd2cf87b5a89b864a0fa384c7f235c58f729fa071254dab2e401198",
+      "destination": "results/primary/Mixhop_nodeepseek/metrics_per_fold.csv"
+    },
+    {
+      "source": "GCN_version_nature_data_gmhi/GCN-SA-main/mult_result/Mixhop_nodeepseek/metrics_summary.csv",
+      "sha256": "a195199b97d30da1949bebc1989601f0be18e21fce1e1df380780d3f403b78dc",
+      "destination": "results/primary/Mixhop_nodeepseek/metrics_summary.csv"
+    },
+    {
+      "source": "GCN_version_nature_data_gmhi/GCN-SA-main/mult_result/Ours/metrics_per_fold.csv",
+      "sha256": "d48094d0d9ab154f1f37c8a86f100f18347a77d95c77f6c9cf25d6159f84496e",
+      "destination": "results/primary/Ours/metrics_per_fold.csv"
+    },
+    {
+      "source": "GCN_version_nature_data_gmhi/GCN-SA-main/mult_result/Ours/metrics_summary.csv",
+      "sha256": "7220a5feee7a4f4f2faf066961ac3a9e224ae2912ea0ff0c796d05fd55ca348b",
+      "destination": "results/primary/Ours/metrics_summary.csv"
+    },
+    {
+      "source": "GCN_version_nature_data_gmhi/GCN-SA-main/mult_result/Ours/per_class_metrics_per_fold.csv",
+      "sha256": "b48082b50d31e994333df68e3f8dbfabf7851988c5929546a0ab91b564141c17",
+      "destination": "results/primary/Ours/per_class_metrics_per_fold.csv"
+    },
+    {
+      "source": "GCN_version_nature_data_gmhi/GCN-SA-main/mult_result/Ours_noabundance/metrics_per_fold.csv",
+      "sha256": "0eecfac2338d32e575e2e91fca872eb855033fc230b0399e45db26378c35316d",
+      "destination": "results/primary/Ours_noabundance/metrics_per_fold.csv"
+    },
+    {
+      "source": "GCN_version_nature_data_gmhi/GCN-SA-main/mult_result/Ours_noabundance/metrics_summary.csv",
+      "sha256": "eb95933c40a97ec3017bda77512865ade0d8bb6debc5591e0387465ca1f20319",
+      "destination": "results/primary/Ours_noabundance/metrics_summary.csv"
+    },
+    {
+      "source": "GCN_version_nature_data_gmhi/GCN-SA-main/mult_result/Ours_noabundance/per_class_metrics_per_fold.csv",
+      "sha256": "2e7dc0690260f5afb868e1ee6525ad2d13b5f869139db429903a5a849bfbfe49",
+      "destination": "results/primary/Ours_noabundance/per_class_metrics_per_fold.csv"
+    },
+    {
+      "source": "GCN_version_nature_data_gmhi/GCN-SA-main/mult_result/Ours_nodeepseek/metrics_per_fold.csv",
+      "sha256": "280ddcd59839c45a1046fc5fe18e3b34815c110def858d762adbe52ee70448d8",
+      "destination": "results/primary/Ours_nodeepseek/metrics_per_fold.csv"
+    },
+    {
+      "source": "GCN_version_nature_data_gmhi/GCN-SA-main/mult_result/Ours_nodeepseek/metrics_summary.csv",
+      "sha256": "161520c4ca97f86dc30268e84ac01acc768b83182259c4c2f0387056cefd6069",
+      "destination": "results/primary/Ours_nodeepseek/metrics_summary.csv"
+    },
+    {
+      "source": "GCN_version_nature_data_gmhi/GCN-SA-main/mult_result/Ours_nodeepseek/per_class_metrics_per_fold.csv",
+      "sha256": "19139df44c0064d023e30f22ced15f69e0edff8b1444afa45108e0f321e63cb8",
+      "destination": "results/primary/Ours_nodeepseek/per_class_metrics_per_fold.csv"
+    },
+    {
+      "source": "GCN_version_nature_data_gmhi/GCN-SA-main/mult_result/Random_Forest/metrics_per_fold.csv",
+      "sha256": "253ac5f0760d8175fa3a28174c87ba6295b04e9083fb857a0166d525ed502489",
+      "destination": "results/primary/Random_Forest/metrics_per_fold.csv"
+    },
+    {
+      "source": "GCN_version_nature_data_gmhi/GCN-SA-main/mult_result/Random_Forest/metrics_summary.csv",
+      "sha256": "dcb4c988990054d0acc46a52bea2681e6643b8b6b1362ad567313c9fe4f92510",
+      "destination": "results/primary/Random_Forest/metrics_summary.csv"
+    },
+    {
+      "source": "GCN_version_nature_data_gmhi/GCN-SA-main/mult_result/Random_Forest_noabundance/metrics_per_fold.csv",
+      "sha256": "728e0425003b5738eafe43822a4f584c3c2652851fee7c3c2de1d0fc47dd6ab4",
+      "destination": "results/primary/Random_Forest_noabundance/metrics_per_fold.csv"
+    },
+    {
+      "source": "GCN_version_nature_data_gmhi/GCN-SA-main/mult_result/Random_Forest_noabundance/metrics_summary.csv",
+      "sha256": "d2a742a672e9c3b55e835eead3eb467bd5b3b37279905616ddf5a7a92d4b124c",
+      "destination": "results/primary/Random_Forest_noabundance/metrics_summary.csv"
+    },
+    {
+      "source": "GCN_version_nature_data_gmhi/GCN-SA-main/mult_result/Random_Forest_nodeepseek/metrics_per_fold.csv",
+      "sha256": "df57b71fa2151158ae1fd043d4ceb3990bca5e78cb98bd8fc8d815ce82d27150",
+      "destination": "results/primary/Random_Forest_nodeepseek/metrics_per_fold.csv"
+    },
+    {
+      "source": "GCN_version_nature_data_gmhi/GCN-SA-main/mult_result/Random_Forest_nodeepseek/metrics_summary.csv",
+      "sha256": "ac1fb338919c0b49ea5b072d7634a6a75045f5b38f7b5f596fe9618c8d771ca8",
+      "destination": "results/primary/Random_Forest_nodeepseek/metrics_summary.csv"
+    },
+    {
+      "source": "GCN_version_nature_data/GCN-SA-main/mult_result/GAT/metrics_per_fold.csv",
+      "sha256": "921bd1f67f70c5ecb0ca49dd09c5d6f2a6e26cb6b5a1f1d78a2089c62e607770",
+      "destination": "results/independent/GAT/metrics_per_fold.csv"
+    },
+    {
+      "source": "GCN_version_nature_data/GCN-SA-main/mult_result/GAT/metrics_summary.csv",
+      "sha256": "756779dae1b3fc7ae5862ca6951b82d410b70597217787d4f1cdf29890cacebb",
+      "destination": "results/independent/GAT/metrics_summary.csv"
+    },
+    {
+      "source": "GCN_version_nature_data/GCN-SA-main/mult_result/GAT_noabundance/metrics_per_fold.csv",
+      "sha256": "111518f004b1f902011ef90fdb8331cbe7bc3a3600418f3284570bef411f9917",
+      "destination": "results/independent/GAT_noabundance/metrics_per_fold.csv"
+    },
+    {
+      "source": "GCN_version_nature_data/GCN-SA-main/mult_result/GAT_noabundance/metrics_summary.csv",
+      "sha256": "744d681da00924f8a9ff6036d0e006ebf0b1c8e81615335797de488045275270",
+      "destination": "results/independent/GAT_noabundance/metrics_summary.csv"
+    },
+    {
+      "source": "GCN_version_nature_data/GCN-SA-main/mult_result/GAT_nodeepseek/metrics_per_fold.csv",
+      "sha256": "c4d903dc45e8b417164db3e433dcf0bae4e9f7d94c2d691d25921527862dda02",
+      "destination": "results/independent/GAT_nodeepseek/metrics_per_fold.csv"
+    },
+    {
+      "source": "GCN_version_nature_data/GCN-SA-main/mult_result/GAT_nodeepseek/metrics_summary.csv",
+      "sha256": "a09e6ba88f606fe708735d28d2d995ab7cfcbc274beec6abac505e5c879eaa68",
+      "destination": "results/independent/GAT_nodeepseek/metrics_summary.csv"
+    },
+    {
+      "source": "GCN_version_nature_data/GCN-SA-main/mult_result/GCN/metrics_per_class.csv",
+      "sha256": "e8992d4c114ae48cf253a6d598ebb3215707859931d2b61394ded07178adeaee",
+      "destination": "results/independent/GCN/metrics_per_class.csv"
+    },
+    {
+      "source": "GCN_version_nature_data/GCN-SA-main/mult_result/GCN/metrics_per_fold.csv",
+      "sha256": "64b6318c426bfdd665e9e2ce56df642e5f540d7c887fbf905eb4f9249e0d5565",
+      "destination": "results/independent/GCN/metrics_per_fold.csv"
+    },
+    {
+      "source": "GCN_version_nature_data/GCN-SA-main/mult_result/GCN/metrics_summary.csv",
+      "sha256": "c827a6e430c2ba37f806b1858a5064b45ff4a719b43e278bb05d176198cc9499",
+      "destination": "results/independent/GCN/metrics_summary.csv"
+    },
+    {
+      "source": "GCN_version_nature_data/GCN-SA-main/mult_result/GCN_noabundance/metrics_per_class.csv",
+      "sha256": "26e2742e8a8c32b1eea4ea0bca27ae6440c07f92ba4c80146bf88846405b1b03",
+      "destination": "results/independent/GCN_noabundance/metrics_per_class.csv"
+    },
+    {
+      "source": "GCN_version_nature_data/GCN-SA-main/mult_result/GCN_noabundance/metrics_per_fold.csv",
+      "sha256": "28c95bea74cc4f39fa061218bc31699dd527b40f0394f8b0cb01d81933ceba58",
+      "destination": "results/independent/GCN_noabundance/metrics_per_fold.csv"
+    },
+    {
+      "source": "GCN_version_nature_data/GCN-SA-main/mult_result/GCN_noabundance/metrics_summary.csv",
+      "sha256": "86fd5bdffb07691e07005f7ea76a2784bd5763a626f961c0a8390a14b03c77e4",
+      "destination": "results/independent/GCN_noabundance/metrics_summary.csv"
+    },
+    {
+      "source": "GCN_version_nature_data/GCN-SA-main/mult_result/GCN_nodeepseek/metrics_per_class.csv",
+      "sha256": "8c31e7b83bc661d2ceef2980a32fe6a6c280f12318a60dc70e630fae88471f26",
+      "destination": "results/independent/GCN_nodeepseek/metrics_per_class.csv"
+    },
+    {
+      "source": "GCN_version_nature_data/GCN-SA-main/mult_result/GCN_nodeepseek/metrics_per_fold.csv",
+      "sha256": "72712f4909aff6c1b7e38c5512231efc7a921dee5bccf72df2e23bc0c8b033cb",
+      "destination": "results/independent/GCN_nodeepseek/metrics_per_fold.csv"
+    },
+    {
+      "source": "GCN_version_nature_data/GCN-SA-main/mult_result/GCN_nodeepseek/metrics_summary.csv",
+      "sha256": "7fe3ce1868f372a7e670e2f93b2df3dc90bfc26c207aa0696753ab7ff26663ad",
+      "destination": "results/independent/GCN_nodeepseek/metrics_summary.csv"
+    },
+    {
+      "source": "GCN_version_nature_data/GCN-SA-main/mult_result/MLP/metrics_per_fold.csv",
+      "sha256": "ffef10959a6fd336e3d81942a18c37e6ec9c64d09438cd567915850dc5b79290",
+      "destination": "results/independent/MLP/metrics_per_fold.csv"
+    },
+    {
+      "source": "GCN_version_nature_data/GCN-SA-main/mult_result/MLP/metrics_summary.csv",
+      "sha256": "e10d529bc11f2aa6f8986945d9c079e1d5c109e926aa7bfb959fee2a00344733",
+      "destination": "results/independent/MLP/metrics_summary.csv"
+    },
+    {
+      "source": "GCN_version_nature_data/GCN-SA-main/mult_result/MLP_noabundance/metrics_per_fold.csv",
+      "sha256": "735a94a565503f1ea1d2bbff1463a10414285758bd6799808083badfdc61275f",
+      "destination": "results/independent/MLP_noabundance/metrics_per_fold.csv"
+    },
+    {
+      "source": "GCN_version_nature_data/GCN-SA-main/mult_result/MLP_noabundance/metrics_summary.csv",
+      "sha256": "ecc3077ed401d9e3400fc46cf20183c6584dcbff2d69381050488c0b8d5b2b09",
+      "destination": "results/independent/MLP_noabundance/metrics_summary.csv"
+    },
+    {
+      "source": "GCN_version_nature_data/GCN-SA-main/mult_result/MLP_nodeepseek/metrics_per_fold.csv",
+      "sha256": "1bc76fff812ee4733926ec77d8d8b6649bd69202c105f5f34ee03a4adad9a9cf",
+      "destination": "results/independent/MLP_nodeepseek/metrics_per_fold.csv"
+    },
+    {
+      "source": "GCN_version_nature_data/GCN-SA-main/mult_result/MLP_nodeepseek/metrics_summary.csv",
+      "sha256": "bb9e449a53fe44e19255b0d3766c56aa5f4b9ae9c9d1a32b9004f06f9b3514e9",
+      "destination": "results/independent/MLP_nodeepseek/metrics_summary.csv"
+    },
+    {
+      "source": "GCN_version_nature_data/GCN-SA-main/mult_result/Meta-Spec/metrics_per_fold.csv",
+      "sha256": "9f2b3350750a4f7890d123ba47042a2ddc0f685141fa31f1359eac1eb72629fd",
+      "destination": "results/independent/Meta-Spec/metrics_per_fold.csv"
+    },
+    {
+      "source": "GCN_version_nature_data/GCN-SA-main/mult_result/Meta-Spec/metrics_summary.csv",
+      "sha256": "db58a87526b851597068ab0302ca81b0f4ef55a21608cf423f8a6d11b5493c6c",
+      "destination": "results/independent/Meta-Spec/metrics_summary.csv"
+    },
+    {
+      "source": "GCN_version_nature_data/GCN-SA-main/mult_result/Meta-Spec/per_class_metrics_per_fold.csv",
+      "sha256": "2bcb9f14eb7e98cd074f11d43ce28d93b9d8d51de316456d68447ce89cdd83d2",
+      "destination": "results/independent/Meta-Spec/per_class_metrics_per_fold.csv"
+    },
+    {
+      "source": "GCN_version_nature_data/GCN-SA-main/mult_result/Meta-Spec_noabundance/metrics_per_fold.csv",
+      "sha256": "8c73354422623d3274658e33de1da02dfa099da04e74c73f975622e7a3022638",
+      "destination": "results/independent/Meta-Spec_noabundance/metrics_per_fold.csv"
+    },
+    {
+      "source": "GCN_version_nature_data/GCN-SA-main/mult_result/Meta-Spec_noabundance/metrics_summary.csv",
+      "sha256": "c8c6467b3fe00973a3efb47a1898a840f17e079fe5f0c84eb3a421a05db14657",
+      "destination": "results/independent/Meta-Spec_noabundance/metrics_summary.csv"
+    },
+    {
+      "source": "GCN_version_nature_data/GCN-SA-main/mult_result/Meta-Spec_noabundance/per_class_metrics_per_fold.csv",
+      "sha256": "63e50d32c602a2f0d27fa519c439f140760dea17e4e1a7b02db1f98e3c9ad55f",
+      "destination": "results/independent/Meta-Spec_noabundance/per_class_metrics_per_fold.csv"
+    },
+    {
+      "source": "GCN_version_nature_data/GCN-SA-main/mult_result/Meta-Spec_nodeepseek/metrics_per_fold.csv",
+      "sha256": "d2686c6d5ff1427c02b0b3fa092a7f0654af484f3947eeed7c5c5bb4ecd667bd",
+      "destination": "results/independent/Meta-Spec_nodeepseek/metrics_per_fold.csv"
+    },
+    {
+      "source": "GCN_version_nature_data/GCN-SA-main/mult_result/Meta-Spec_nodeepseek/metrics_summary.csv",
+      "sha256": "bb102c7aa4d89df519c09d6c0cb5a73097921ec2997e5dd08d90b3006bdca702",
+      "destination": "results/independent/Meta-Spec_nodeepseek/metrics_summary.csv"
+    },
+    {
+      "source": "GCN_version_nature_data/GCN-SA-main/mult_result/Meta-Spec_nodeepseek/per_class_metrics_per_fold.csv",
+      "sha256": "7551bc325e852cdf76e580adfe8545b0f8ebda22b0f710a839e4a426cd20dc61",
+      "destination": "results/independent/Meta-Spec_nodeepseek/per_class_metrics_per_fold.csv"
+    },
+    {
+      "source": "GCN_version_nature_data/GCN-SA-main/mult_result/Mixhop/metrics_per_fold.csv",
+      "sha256": "9295cbf8bb845f459819011da1e32ca15e352ef8b8ef9dd97cc64ee62724091f",
+      "destination": "results/independent/Mixhop/metrics_per_fold.csv"
+    },
+    {
+      "source": "GCN_version_nature_data/GCN-SA-main/mult_result/Mixhop/metrics_summary.csv",
+      "sha256": "dd2e26a7340bb32055e4c1e1cba30de94cf41d9d43e79983eda8335580348bc5",
+      "destination": "results/independent/Mixhop/metrics_summary.csv"
+    },
+    {
+      "source": "GCN_version_nature_data/GCN-SA-main/mult_result/Mixhop_noabundance/metrics_per_fold.csv",
+      "sha256": "c49386e1910c67f9c1971452793db35bdae773457bafe0b19a3f0ac2b3c76a3b",
+      "destination": "results/independent/Mixhop_noabundance/metrics_per_fold.csv"
+    },
+    {
+      "source": "GCN_version_nature_data/GCN-SA-main/mult_result/Mixhop_noabundance/metrics_summary.csv",
+      "sha256": "6cf43ed3e21ec0cd0000fdd775f6ea1015d8c6dc6883e1eb0daa92aebb8a0000",
+      "destination": "results/independent/Mixhop_noabundance/metrics_summary.csv"
+    },
+    {
+      "source": "GCN_version_nature_data/GCN-SA-main/mult_result/Mixhop_nodeepseek/metrics_per_fold.csv",
+      "sha256": "9b97c492e5617e79dbeb99a94261ed6b842b92e942f0242cc0749ff519ef514b",
+      "destination": "results/independent/Mixhop_nodeepseek/metrics_per_fold.csv"
+    },
+    {
+      "source": "GCN_version_nature_data/GCN-SA-main/mult_result/Mixhop_nodeepseek/metrics_summary.csv",
+      "sha256": "94d926072a7d3c70e03e1a9e665f2202ae263f5987be355e34e1b4f9a08b159e",
+      "destination": "results/independent/Mixhop_nodeepseek/metrics_summary.csv"
+    },
+    {
+      "source": "GCN_version_nature_data/GCN-SA-main/mult_result/Ours/metrics_per_fold.csv",
+      "sha256": "ab2832f39a0a406343846378a550a66c82e9b1d391dc988739e832ecda709b8d",
+      "destination": "results/independent/Ours/metrics_per_fold.csv"
+    },
+    {
+      "source": "GCN_version_nature_data/GCN-SA-main/mult_result/Ours/metrics_summary.csv",
+      "sha256": "3f93697e28b704a81135b19fc6618b05dc48b9541988a2ad671d4cae8aa2eb04",
+      "destination": "results/independent/Ours/metrics_summary.csv"
+    },
+    {
+      "source": "GCN_version_nature_data/GCN-SA-main/mult_result/Ours/per_class_metrics_per_fold.csv",
+      "sha256": "690a04ba48adb95722d227adfafc5fecb8f806afcfe81d4025f40caad771eed1",
+      "destination": "results/independent/Ours/per_class_metrics_per_fold.csv"
+    },
+    {
+      "source": "GCN_version_nature_data/GCN-SA-main/mult_result/Ours_noabundance/metrics_per_fold.csv",
+      "sha256": "0d68fcb3067fefa543b58ec37471c22242c80dd8b8f1cbd9d2ca5c566c0d4920",
+      "destination": "results/independent/Ours_noabundance/metrics_per_fold.csv"
+    },
+    {
+      "source": "GCN_version_nature_data/GCN-SA-main/mult_result/Ours_noabundance/metrics_summary.csv",
+      "sha256": "85fd99fff43673e8e2359aeef03f3a606d2a50bab147f26abcae53dc4bfbfdfc",
+      "destination": "results/independent/Ours_noabundance/metrics_summary.csv"
+    },
+    {
+      "source": "GCN_version_nature_data/GCN-SA-main/mult_result/Ours_noabundance/per_class_metrics_per_fold.csv",
+      "sha256": "5b97bf8f06701ff7366692e5b6c85f90193015a8121f3fc4f409292e7bf608bf",
+      "destination": "results/independent/Ours_noabundance/per_class_metrics_per_fold.csv"
+    },
+    {
+      "source": "GCN_version_nature_data/GCN-SA-main/mult_result/Ours_nodeepseek/metrics_per_fold.csv",
+      "sha256": "76136806b46f9435f0b2e89e3f42c46cec6fa777dfdfba2183ca4fa351d02498",
+      "destination": "results/independent/Ours_nodeepseek/metrics_per_fold.csv"
+    },
+    {
+      "source": "GCN_version_nature_data/GCN-SA-main/mult_result/Ours_nodeepseek/metrics_summary.csv",
+      "sha256": "b259cf107f9722b2529547d7dc26823b22971d598289e98e6141eea736a51607",
+      "destination": "results/independent/Ours_nodeepseek/metrics_summary.csv"
+    },
+    {
+      "source": "GCN_version_nature_data/GCN-SA-main/mult_result/Ours_nodeepseek/per_class_metrics_per_fold.csv",
+      "sha256": "f8d8b2f3fae9ce1189701fd9be107226453d1e760273a0cbdaef42c7e86e9c91",
+      "destination": "results/independent/Ours_nodeepseek/per_class_metrics_per_fold.csv"
+    },
+    {
+      "source": "GCN_version_nature_data/GCN-SA-main/mult_result/Random_Forest/metrics_per_fold.csv",
+      "sha256": "23e9ee51718697f3afe1d2056f32187c1da2c59403abb387ac26175d98388d59",
+      "destination": "results/independent/Random_Forest/metrics_per_fold.csv"
+    },
+    {
+      "source": "GCN_version_nature_data/GCN-SA-main/mult_result/Random_Forest/metrics_summary.csv",
+      "sha256": "9367d8d67fd331e0a0e1b4c11885f7b90da8f9a10b1bf173194d6fc8f964b198",
+      "destination": "results/independent/Random_Forest/metrics_summary.csv"
+    },
+    {
+      "source": "GCN_version_nature_data/GCN-SA-main/mult_result/Random_Forest_noabundance/metrics_per_fold.csv",
+      "sha256": "27b293dbd17bbfa6022c619a3237c190a48440866a4f66928582594401a5b9bf",
+      "destination": "results/independent/Random_Forest_noabundance/metrics_per_fold.csv"
+    },
+    {
+      "source": "GCN_version_nature_data/GCN-SA-main/mult_result/Random_Forest_noabundance/metrics_summary.csv",
+      "sha256": "60888691e9c321d2537907806c31277cca8e05587423df5c6a6be357185b3156",
+      "destination": "results/independent/Random_Forest_noabundance/metrics_summary.csv"
+    },
+    {
+      "source": "GCN_version_nature_data/GCN-SA-main/mult_result/Random_Forest_nodeepseek/metrics_per_fold.csv",
+      "sha256": "77c754cd4cbf855def2548894b6a49df27a59b2db899a8f7490bf63b00bf04b1",
+      "destination": "results/independent/Random_Forest_nodeepseek/metrics_per_fold.csv"
+    },
+    {
+      "source": "GCN_version_nature_data/GCN-SA-main/mult_result/Random_Forest_nodeepseek/metrics_summary.csv",
+      "sha256": "ace3cbfab4bdd267d979d7138a6035f4bbaeb4ffa1de1a26c0e9633d52bb8527",
+      "destination": "results/independent/Random_Forest_nodeepseek/metrics_summary.csv"
+    },
+    {
+      "source": "comp/got/prompt1/GCN-SA/prompt_logs_manual/fused_prompts_max_distance_round3.json",
+      "sha256": "4172b8113fa17c13b3a9a7d563425d300a89bffd5b0da7556d78eafa7e63df80",
+      "destination": "prompt_search/history/pair_refinement/fused_prompts_max_distance_round3.json"
+    },
+    {
+      "source": "comp/got/prompt1/GCN-SA/prompt_logs_manual/prompt_pair_attempts_round3.csv",
+      "sha256": "3ee08ce51785081e2478c5febefcae493763e8b343a6db89ee11afc8269275a6",
+      "destination": "prompt_search/history/pair_refinement/prompt_pair_attempts_round3.csv"
+    },
+    {
+      "source": "comp/got/prompt1/GCN-SA/prompt_logs_manual/prompt_pair_distance_rankings_round3.csv",
+      "sha256": "be68742c6d7abde4361562b0b60946d782c8904a43af10853d8895bc804281ad",
+      "destination": "prompt_search/history/pair_refinement/prompt_pair_distance_rankings_round3.csv"
+    },
+    {
+      "source": "comp/got/prompt1/GCN-SA/prompt_logs_manual/prompt_pair_kept_runs_round3.json",
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "destination": "prompt_search/history/pair_refinement/prompt_pair_kept_runs_round3.json"
+    },
+    {
+      "source": "GCN_version_nature_data_gmhi/GCN-SA-main/GCN-SA/pygcn/models.py",
+      "sha256": "6e0baac6f69c6abc5a042d71987163a54b761958981a3aa197958da3808946f5"
+    },
+    {
+      "source": "data/final_multi_disease_all_features_768_one_2577_5_only_group_search_93.npz",
+      "sha256": "b410394d74e1d0be45f27fa61255d83bb247573fa72e926bb255e40b0470e539"
+    },
+    {
+      "source": "GCN_version_nature_data/GCN-SA-main/GCN-SA/pygcn/train_only_otu_info_mult_disease_200_deepseek_two_part_new_graph_got_search.py",
+      "sha256": "49595c7ee5df798f448e78c9be4ea7872eaf58b9483be6499ffdb1cc5cb899f3"
+    },
+    {
+      "source": "GCN_version_nature_data_gmhi/GCN-SA-main/GCN-SA/output_only_otu_info_mult_disease_deepseek_two_one_only_group_4347_no_structure_7.30_braycurtis/metrics_per_fold.csv",
+      "destination": "results/primary/MetaDual_no_structure/metrics_per_fold.csv",
+      "sha256": "7b5846c2e1c07aee904a3ad254c806399cc06c01b0d7a7a2421fad4542bd5646"
+    },
+    {
+      "source": "GCN_version_nature_data_gmhi/GCN-SA-main/GCN-SA/output_only_otu_info_mult_disease_deepseek_two_one_only_group_4347_no_structure_7.30_braycurtis/metrics_summary.csv",
+      "destination": "results/primary/MetaDual_no_structure/metrics_summary.csv",
+      "sha256": "8b8ff28f41f39729dcc94d4b55629b5be63e7b08dc30a32060d8a9ae212021ba"
+    },
+    {
+      "source": "GCN_version_nature_data_gmhi/GCN-SA-main/GCN-SA/output_only_otu_info_mult_disease_deepseek_two_one_only_group_4347_no_structure_7.30_braycurtis/per_class_metrics_per_fold.csv",
+      "destination": "results/primary/MetaDual_no_structure/per_class_metrics_per_fold.csv",
+      "sha256": "9c3c442e5681a85e7338506d4e98daec2eb775eae849fe268b8b6eba468559fa"
+    },
+    {
+      "source": "GCN_version_nature_data_gmhi/GCN-SA-main/GCN-SA/output_only_otu_info_mult_disease_deepseek_two_one_only_group_4347_no_modifiedt_7.30_braycurtis/metrics_per_fold.csv",
+      "destination": "results/primary/MetaDual_no_modifiedt_1/metrics_per_fold.csv",
+      "sha256": "65a8e992ebeffca8d1f6f4c2ab5741683233bb264d7ccdfe77be9b05d16bf4db"
+    },
+    {
+      "source": "GCN_version_nature_data_gmhi/GCN-SA-main/GCN-SA/output_only_otu_info_mult_disease_deepseek_two_one_only_group_4347_no_modifiedt_7.30_braycurtis/metrics_summary.csv",
+      "destination": "results/primary/MetaDual_no_modifiedt_1/metrics_summary.csv",
+      "sha256": "cb45a77e3b71fbe950c4c913c2ef3e86ecedc99df9d14c364c90f553bec8a44b"
+    },
+    {
+      "source": "GCN_version_nature_data_gmhi/GCN-SA-main/GCN-SA/output_only_otu_info_mult_disease_deepseek_two_one_only_group_4347_no_modifiedt_7.30_braycurtis/per_class_metrics_per_fold.csv",
+      "destination": "results/primary/MetaDual_no_modifiedt_1/per_class_metrics_per_fold.csv",
+      "sha256": "3de1a2a6a477c8394d8774bb2f0376375daf5c43113eaba8129c4a1dbc5ca311"
+    },
+    {
+      "source": "GCN_version_nature_data_gmhi/GCN-SA-main/GCN-SA/output_only_otu_info_mult_disease_deepseek_two_one_only_group_4347_modifiedt_back_7.30_braycurtis/metrics_per_fold.csv",
+      "destination": "results/primary/MetaDual_no_modifiedt_2/metrics_per_fold.csv",
+      "sha256": "944b4449fc04a33cc3f2c49ae45679eff9a0b60128f983f2d6b98912d35ccd65"
+    },
+    {
+      "source": "GCN_version_nature_data_gmhi/GCN-SA-main/GCN-SA/output_only_otu_info_mult_disease_deepseek_two_one_only_group_4347_modifiedt_back_7.30_braycurtis/metrics_summary.csv",
+      "destination": "results/primary/MetaDual_no_modifiedt_2/metrics_summary.csv",
+      "sha256": "d26c1837f0a07b898a1d1c9a75cfd47d3dbbe8b4e34dd091be4a196dbc530e6b"
+    },
+    {
+      "source": "GCN_version_nature_data_gmhi/GCN-SA-main/GCN-SA/output_only_otu_info_mult_disease_deepseek_two_one_only_group_4347_modifiedt_back_7.30_braycurtis/per_class_metrics_per_fold.csv",
+      "destination": "results/primary/MetaDual_no_modifiedt_2/per_class_metrics_per_fold.csv",
+      "sha256": "1ddaca8f63e84e069726d1e12f2bd803291f9af8bb0744db602137e856425454"
+    }
+  ],
+  "copied_results": [
+    {
+      "source": "GCN_version_nature_data_gmhi/GCN-SA-main/mult_result/GAT/metrics_per_fold.csv",
+      "sha256": "ffbacb97c4f7f5f9eec174a5a8ba732368874a0025e78cc93388f36cd28d2eeb",
+      "destination": "results/primary/GAT/metrics_per_fold.csv"
+    },
+    {
+      "source": "GCN_version_nature_data_gmhi/GCN-SA-main/mult_result/GAT/metrics_summary.csv",
+      "sha256": "75f22c59253f277834bfd1bdba41f8e73fb30247daeb8413202d0e1d546af3df",
+      "destination": "results/primary/GAT/metrics_summary.csv"
+    },
+    {
+      "source": "GCN_version_nature_data_gmhi/GCN-SA-main/mult_result/GAT_noabundance/metrics_per_fold.csv",
+      "sha256": "e1d60f1930420125e15dfc1700ea447a04cd04a700b0c389f3c84bf7b636e525",
+      "destination": "results/primary/GAT_noabundance/metrics_per_fold.csv"
+    },
+    {
+      "source": "GCN_version_nature_data_gmhi/GCN-SA-main/mult_result/GAT_noabundance/metrics_summary.csv",
+      "sha256": "13e27fbfcba5063d7d52d65efe987ee469d9cf485caf8d3eb6d5cb637648a1a1",
+      "destination": "results/primary/GAT_noabundance/metrics_summary.csv"
+    },
+    {
+      "source": "GCN_version_nature_data_gmhi/GCN-SA-main/mult_result/GAT_nodeepseek/metrics_per_fold.csv",
+      "sha256": "6e0751470aac1f12a5365956ddf4be1d4e084535392ac4c35f88ef8d9e757248",
+      "destination": "results/primary/GAT_nodeepseek/metrics_per_fold.csv"
+    },
+    {
+      "source": "GCN_version_nature_data_gmhi/GCN-SA-main/mult_result/GAT_nodeepseek/metrics_summary.csv",
+      "sha256": "4ec42cdbcde41553ee320f56e0d6703a4ee34d111ebe7144c4081582036b0c40",
+      "destination": "results/primary/GAT_nodeepseek/metrics_summary.csv"
+    },
+    {
+      "source": "GCN_version_nature_data_gmhi/GCN-SA-main/mult_result/GCN/metrics_per_class.csv",
+      "sha256": "0257a449a91a9de89f5fc47aea6f45de27a5be5426dd0034e203858c06f38baf",
+      "destination": "results/primary/GCN/metrics_per_class.csv"
+    },
+    {
+      "source": "GCN_version_nature_data_gmhi/GCN-SA-main/mult_result/GCN/metrics_per_fold.csv",
+      "sha256": "faddc466879684aa62c86ec2fc240b8c64132ba08dc9a9883dff08156fb26ca5",
+      "destination": "results/primary/GCN/metrics_per_fold.csv"
+    },
+    {
+      "source": "GCN_version_nature_data_gmhi/GCN-SA-main/mult_result/GCN/metrics_summary.csv",
+      "sha256": "21dde4214a0d50a39ce72f9d73a0b8180e08478f3d88758d56ba39aa1ebc92ee",
+      "destination": "results/primary/GCN/metrics_summary.csv"
+    },
+    {
+      "source": "GCN_version_nature_data_gmhi/GCN-SA-main/mult_result/GCN_noabundance/metrics_per_class.csv",
+      "sha256": "6e637a63c4d006045b6f26a9e39751c307d54053240463fd596799738b565655",
+      "destination": "results/primary/GCN_noabundance/metrics_per_class.csv"
+    },
+    {
+      "source": "GCN_version_nature_data_gmhi/GCN-SA-main/mult_result/GCN_noabundance/metrics_per_fold.csv",
+      "sha256": "768a09dd44938b507a1f03bd5c69d57e578e744027b42be5f1c23f67d71994e1",
+      "destination": "results/primary/GCN_noabundance/metrics_per_fold.csv"
+    },
+    {
+      "source": "GCN_version_nature_data_gmhi/GCN-SA-main/mult_result/GCN_noabundance/metrics_summary.csv",
+      "sha256": "0bcf22ad90c824bb211524c038ac819d4fe17132f51985cc5488903dcd3738b3",
+      "destination": "results/primary/GCN_noabundance/metrics_summary.csv"
+    },
+    {
+      "source": "GCN_version_nature_data_gmhi/GCN-SA-main/mult_result/GCN_nodeepseek/metrics_per_class.csv",
+      "sha256": "02c7b81be2b002b3eb519368a32260fd19ec9c37b208889552cd968215126d77",
+      "destination": "results/primary/GCN_nodeepseek/metrics_per_class.csv"
+    },
+    {
+      "source": "GCN_version_nature_data_gmhi/GCN-SA-main/mult_result/GCN_nodeepseek/metrics_per_fold.csv",
+      "sha256": "667e7276beeb36288c7681f827bbb89f09e46dfe449b81f9e55a32e94440d43b",
+      "destination": "results/primary/GCN_nodeepseek/metrics_per_fold.csv"
+    },
+    {
+      "source": "GCN_version_nature_data_gmhi/GCN-SA-main/mult_result/GCN_nodeepseek/metrics_summary.csv",
+      "sha256": "8b96fdf0cd57ba9801e05eb6312c679c9d9090152ae110c8947d4002da021606",
+      "destination": "results/primary/GCN_nodeepseek/metrics_summary.csv"
+    },
+    {
+      "source": "GCN_version_nature_data_gmhi/GCN-SA-main/mult_result/MLP/metrics_per_fold.csv",
+      "sha256": "35c17d286bc30c0adc46242cfa40a2b234202dbeea667e107a42b539a5e2ca07",
+      "destination": "results/primary/MLP/metrics_per_fold.csv"
+    },
+    {
+      "source": "GCN_version_nature_data_gmhi/GCN-SA-main/mult_result/MLP/metrics_summary.csv",
+      "sha256": "fe51f8510e340a5a84ffaa8beb294432f887c5f0c3942150f7b71f15ee96a2a7",
+      "destination": "results/primary/MLP/metrics_summary.csv"
+    },
+    {
+      "source": "GCN_version_nature_data_gmhi/GCN-SA-main/mult_result/MLP_noabundance/metrics_per_fold.csv",
+      "sha256": "2e505549b27ff4beab62f08ad74251899e3206b69bfc0399ec5101d4e1b91429",
+      "destination": "results/primary/MLP_noabundance/metrics_per_fold.csv"
+    },
+    {
+      "source": "GCN_version_nature_data_gmhi/GCN-SA-main/mult_result/MLP_noabundance/metrics_summary.csv",
+      "sha256": "a3403c77b9ca0298fea04bcc61074b0759a82a0e5cc2ab9127822d039098dea9",
+      "destination": "results/primary/MLP_noabundance/metrics_summary.csv"
+    },
+    {
+      "source": "GCN_version_nature_data_gmhi/GCN-SA-main/mult_result/MLP_nodeepseek/metrics_per_fold.csv",
+      "sha256": "43da4797cfb35b5d60289e0921f33a7f1bb1ba97e4c7beae699a94243e748020",
+      "destination": "results/primary/MLP_nodeepseek/metrics_per_fold.csv"
+    },
+    {
+      "source": "GCN_version_nature_data_gmhi/GCN-SA-main/mult_result/MLP_nodeepseek/metrics_summary.csv",
+      "sha256": "f86f3683c6ebfbdfbb05dd5d854dc3455b30732ae5b2342fb5e991c4be2505e8",
+      "destination": "results/primary/MLP_nodeepseek/metrics_summary.csv"
+    },
+    {
+      "source": "GCN_version_nature_data_gmhi/GCN-SA-main/mult_result/Meta-Spec/metrics_per_fold.csv",
+      "sha256": "cb847e588c1592f14f903f70bb60cf936c9f6697f112ef1e5fa35e3d1bcb3204",
+      "destination": "results/primary/Meta-Spec/metrics_per_fold.csv"
+    },
+    {
+      "source": "GCN_version_nature_data_gmhi/GCN-SA-main/mult_result/Meta-Spec/metrics_summary.csv",
+      "sha256": "b9d0190c5d30df59628fb2140f236e11db140d33cfd5dcfb3275c6fc712ac67a",
+      "destination": "results/primary/Meta-Spec/metrics_summary.csv"
+    },
+    {
+      "source": "GCN_version_nature_data_gmhi/GCN-SA-main/mult_result/Meta-Spec/per_class_metrics_per_fold.csv",
+      "sha256": "4594cdea6cf7fd9600c6ee4a058ed16ee61a10e36900ad7da3a105c5a5723833",
+      "destination": "results/primary/Meta-Spec/per_class_metrics_per_fold.csv"
+    },
+    {
+      "source": "GCN_version_nature_data_gmhi/GCN-SA-main/mult_result/Meta-Spec_noabundance/metrics_per_fold.csv",
+      "sha256": "08cc312667b0213fd92fd0a2843eb1bdc6b0c6eab0f48a01a304bf453d85566b",
+      "destination": "results/primary/Meta-Spec_noabundance/metrics_per_fold.csv"
+    },
+    {
+      "source": "GCN_version_nature_data_gmhi/GCN-SA-main/mult_result/Meta-Spec_noabundance/metrics_summary.csv",
+      "sha256": "a4a99aaacbcd086203aa10250cfefea6549c46132d84932d8d97d4662a48cf95",
+      "destination": "results/primary/Meta-Spec_noabundance/metrics_summary.csv"
+    },
+    {
+      "source": "GCN_version_nature_data_gmhi/GCN-SA-main/mult_result/Meta-Spec_noabundance/per_class_metrics_per_fold.csv",
+      "sha256": "0b6b49178a65866f284855bf836b02b374e124b004ef263c248f5a62559c6bd1",
+      "destination": "results/primary/Meta-Spec_noabundance/per_class_metrics_per_fold.csv"
+    },
+    {
+      "source": "GCN_version_nature_data_gmhi/GCN-SA-main/mult_result/Meta-Spec_nodeepseek/metrics_per_fold.csv",
+      "sha256": "333b2d29c5c316ab480066b1dd400b00bea850dd603af76f86a4ab870d67c7cc",
+      "destination": "results/primary/Meta-Spec_nodeepseek/metrics_per_fold.csv"
+    },
+    {
+      "source": "GCN_version_nature_data_gmhi/GCN-SA-main/mult_result/Meta-Spec_nodeepseek/metrics_summary.csv",
+      "sha256": "08463817927be37ab1f37cc5612bc6e18ebbfc74fb8cd79d3c2740d71d881c63",
+      "destination": "results/primary/Meta-Spec_nodeepseek/metrics_summary.csv"
+    },
+    {
+      "source": "GCN_version_nature_data_gmhi/GCN-SA-main/mult_result/Meta-Spec_nodeepseek/per_class_metrics_per_fold.csv",
+      "sha256": "eab58cef28280f34cec0faa18e7c7ac4013bf6a687d2f731983d5d424f9deaf0",
+      "destination": "results/primary/Meta-Spec_nodeepseek/per_class_metrics_per_fold.csv"
+    },
+    {
+      "source": "GCN_version_nature_data_gmhi/GCN-SA-main/mult_result/Mixhop/metrics_per_fold.csv",
+      "sha256": "75d1fef272a617cf614f0be649c48b6cb0f84fde7565d9ae666fc90215850d6f",
+      "destination": "results/primary/Mixhop/metrics_per_fold.csv"
+    },
+    {
+      "source": "GCN_version_nature_data_gmhi/GCN-SA-main/mult_result/Mixhop/metrics_summary.csv",
+      "sha256": "d3910af400525754689fac09c3c0970ae589f2c29fdd24854d8305ab34e26d6f",
+      "destination": "results/primary/Mixhop/metrics_summary.csv"
+    },
+    {
+      "source": "GCN_version_nature_data_gmhi/GCN-SA-main/mult_result/Mixhop_noabundance/metrics_per_fold.csv",
+      "sha256": "dddf8058a078ccab2832453f52fa0488e5492f04f5a21dd1c2478ad9295910d0",
+      "destination": "results/primary/Mixhop_noabundance/metrics_per_fold.csv"
+    },
+    {
+      "source": "GCN_version_nature_data_gmhi/GCN-SA-main/mult_result/Mixhop_noabundance/metrics_summary.csv",
+      "sha256": "687902f80037050bad1a911e07e04b1ee23f0feaf62e9a0d643366e892496aa5",
+      "destination": "results/primary/Mixhop_noabundance/metrics_summary.csv"
+    },
+    {
+      "source": "GCN_version_nature_data_gmhi/GCN-SA-main/mult_result/Mixhop_nodeepseek/metrics_per_fold.csv",
+      "sha256": "ebbf44828fd2cf87b5a89b864a0fa384c7f235c58f729fa071254dab2e401198",
+      "destination": "results/primary/Mixhop_nodeepseek/metrics_per_fold.csv"
+    },
+    {
+      "source": "GCN_version_nature_data_gmhi/GCN-SA-main/mult_result/Mixhop_nodeepseek/metrics_summary.csv",
+      "sha256": "a195199b97d30da1949bebc1989601f0be18e21fce1e1df380780d3f403b78dc",
+      "destination": "results/primary/Mixhop_nodeepseek/metrics_summary.csv"
+    },
+    {
+      "source": "GCN_version_nature_data_gmhi/GCN-SA-main/mult_result/Ours/metrics_per_fold.csv",
+      "sha256": "d48094d0d9ab154f1f37c8a86f100f18347a77d95c77f6c9cf25d6159f84496e",
+      "destination": "results/primary/Ours/metrics_per_fold.csv"
+    },
+    {
+      "source": "GCN_version_nature_data_gmhi/GCN-SA-main/mult_result/Ours/metrics_summary.csv",
+      "sha256": "7220a5feee7a4f4f2faf066961ac3a9e224ae2912ea0ff0c796d05fd55ca348b",
+      "destination": "results/primary/Ours/metrics_summary.csv"
+    },
+    {
+      "source": "GCN_version_nature_data_gmhi/GCN-SA-main/mult_result/Ours/per_class_metrics_per_fold.csv",
+      "sha256": "b48082b50d31e994333df68e3f8dbfabf7851988c5929546a0ab91b564141c17",
+      "destination": "results/primary/Ours/per_class_metrics_per_fold.csv"
+    },
+    {
+      "source": "GCN_version_nature_data_gmhi/GCN-SA-main/mult_result/Ours_noabundance/metrics_per_fold.csv",
+      "sha256": "0eecfac2338d32e575e2e91fca872eb855033fc230b0399e45db26378c35316d",
+      "destination": "results/primary/Ours_noabundance/metrics_per_fold.csv"
+    },
+    {
+      "source": "GCN_version_nature_data_gmhi/GCN-SA-main/mult_result/Ours_noabundance/metrics_summary.csv",
+      "sha256": "eb95933c40a97ec3017bda77512865ade0d8bb6debc5591e0387465ca1f20319",
+      "destination": "results/primary/Ours_noabundance/metrics_summary.csv"
+    },
+    {
+      "source": "GCN_version_nature_data_gmhi/GCN-SA-main/mult_result/Ours_noabundance/per_class_metrics_per_fold.csv",
+      "sha256": "2e7dc0690260f5afb868e1ee6525ad2d13b5f869139db429903a5a849bfbfe49",
+      "destination": "results/primary/Ours_noabundance/per_class_metrics_per_fold.csv"
+    },
+    {
+      "source": "GCN_version_nature_data_gmhi/GCN-SA-main/mult_result/Ours_nodeepseek/metrics_per_fold.csv",
+      "sha256": "280ddcd59839c45a1046fc5fe18e3b34815c110def858d762adbe52ee70448d8",
+      "destination": "results/primary/Ours_nodeepseek/metrics_per_fold.csv"
+    },
+    {
+      "source": "GCN_version_nature_data_gmhi/GCN-SA-main/mult_result/Ours_nodeepseek/metrics_summary.csv",
+      "sha256": "161520c4ca97f86dc30268e84ac01acc768b83182259c4c2f0387056cefd6069",
+      "destination": "results/primary/Ours_nodeepseek/metrics_summary.csv"
+    },
+    {
+      "source": "GCN_version_nature_data_gmhi/GCN-SA-main/mult_result/Ours_nodeepseek/per_class_metrics_per_fold.csv",
+      "sha256": "19139df44c0064d023e30f22ced15f69e0edff8b1444afa45108e0f321e63cb8",
+      "destination": "results/primary/Ours_nodeepseek/per_class_metrics_per_fold.csv"
+    },
+    {
+      "source": "GCN_version_nature_data_gmhi/GCN-SA-main/mult_result/Random_Forest/metrics_per_fold.csv",
+      "sha256": "253ac5f0760d8175fa3a28174c87ba6295b04e9083fb857a0166d525ed502489",
+      "destination": "results/primary/Random_Forest/metrics_per_fold.csv"
+    },
+    {
+      "source": "GCN_version_nature_data_gmhi/GCN-SA-main/mult_result/Random_Forest/metrics_summary.csv",
+      "sha256": "dcb4c988990054d0acc46a52bea2681e6643b8b6b1362ad567313c9fe4f92510",
+      "destination": "results/primary/Random_Forest/metrics_summary.csv"
+    },
+    {
+      "source": "GCN_version_nature_data_gmhi/GCN-SA-main/mult_result/Random_Forest_noabundance/metrics_per_fold.csv",
+      "sha256": "728e0425003b5738eafe43822a4f584c3c2652851fee7c3c2de1d0fc47dd6ab4",
+      "destination": "results/primary/Random_Forest_noabundance/metrics_per_fold.csv"
+    },
+    {
+      "source": "GCN_version_nature_data_gmhi/GCN-SA-main/mult_result/Random_Forest_noabundance/metrics_summary.csv",
+      "sha256": "d2a742a672e9c3b55e835eead3eb467bd5b3b37279905616ddf5a7a92d4b124c",
+      "destination": "results/primary/Random_Forest_noabundance/metrics_summary.csv"
+    },
+    {
+      "source": "GCN_version_nature_data_gmhi/GCN-SA-main/mult_result/Random_Forest_nodeepseek/metrics_per_fold.csv",
+      "sha256": "df57b71fa2151158ae1fd043d4ceb3990bca5e78cb98bd8fc8d815ce82d27150",
+      "destination": "results/primary/Random_Forest_nodeepseek/metrics_per_fold.csv"
+    },
+    {
+      "source": "GCN_version_nature_data_gmhi/GCN-SA-main/mult_result/Random_Forest_nodeepseek/metrics_summary.csv",
+      "sha256": "ac1fb338919c0b49ea5b072d7634a6a75045f5b38f7b5f596fe9618c8d771ca8",
+      "destination": "results/primary/Random_Forest_nodeepseek/metrics_summary.csv"
+    },
+    {
+      "source": "GCN_version_nature_data/GCN-SA-main/mult_result/GAT/metrics_per_fold.csv",
+      "sha256": "921bd1f67f70c5ecb0ca49dd09c5d6f2a6e26cb6b5a1f1d78a2089c62e607770",
+      "destination": "results/independent/GAT/metrics_per_fold.csv"
+    },
+    {
+      "source": "GCN_version_nature_data/GCN-SA-main/mult_result/GAT/metrics_summary.csv",
+      "sha256": "756779dae1b3fc7ae5862ca6951b82d410b70597217787d4f1cdf29890cacebb",
+      "destination": "results/independent/GAT/metrics_summary.csv"
+    },
+    {
+      "source": "GCN_version_nature_data/GCN-SA-main/mult_result/GAT_noabundance/metrics_per_fold.csv",
+      "sha256": "111518f004b1f902011ef90fdb8331cbe7bc3a3600418f3284570bef411f9917",
+      "destination": "results/independent/GAT_noabundance/metrics_per_fold.csv"
+    },
+    {
+      "source": "GCN_version_nature_data/GCN-SA-main/mult_result/GAT_noabundance/metrics_summary.csv",
+      "sha256": "744d681da00924f8a9ff6036d0e006ebf0b1c8e81615335797de488045275270",
+      "destination": "results/independent/GAT_noabundance/metrics_summary.csv"
+    },
+    {
+      "source": "GCN_version_nature_data/GCN-SA-main/mult_result/GAT_nodeepseek/metrics_per_fold.csv",
+      "sha256": "c4d903dc45e8b417164db3e433dcf0bae4e9f7d94c2d691d25921527862dda02",
+      "destination": "results/independent/GAT_nodeepseek/metrics_per_fold.csv"
+    },
+    {
+      "source": "GCN_version_nature_data/GCN-SA-main/mult_result/GAT_nodeepseek/metrics_summary.csv",
+      "sha256": "a09e6ba88f606fe708735d28d2d995ab7cfcbc274beec6abac505e5c879eaa68",
+      "destination": "results/independent/GAT_nodeepseek/metrics_summary.csv"
+    },
+    {
+      "source": "GCN_version_nature_data/GCN-SA-main/mult_result/GCN/metrics_per_class.csv",
+      "sha256": "e8992d4c114ae48cf253a6d598ebb3215707859931d2b61394ded07178adeaee",
+      "destination": "results/independent/GCN/metrics_per_class.csv"
+    },
+    {
+      "source": "GCN_version_nature_data/GCN-SA-main/mult_result/GCN/metrics_per_fold.csv",
+      "sha256": "64b6318c426bfdd665e9e2ce56df642e5f540d7c887fbf905eb4f9249e0d5565",
+      "destination": "results/independent/GCN/metrics_per_fold.csv"
+    },
+    {
+      "source": "GCN_version_nature_data/GCN-SA-main/mult_result/GCN/metrics_summary.csv",
+      "sha256": "c827a6e430c2ba37f806b1858a5064b45ff4a719b43e278bb05d176198cc9499",
+      "destination": "results/independent/GCN/metrics_summary.csv"
+    },
+    {
+      "source": "GCN_version_nature_data/GCN-SA-main/mult_result/GCN_noabundance/metrics_per_class.csv",
+      "sha256": "26e2742e8a8c32b1eea4ea0bca27ae6440c07f92ba4c80146bf88846405b1b03",
+      "destination": "results/independent/GCN_noabundance/metrics_per_class.csv"
+    },
+    {
+      "source": "GCN_version_nature_data/GCN-SA-main/mult_result/GCN_noabundance/metrics_per_fold.csv",
+      "sha256": "28c95bea74cc4f39fa061218bc31699dd527b40f0394f8b0cb01d81933ceba58",
+      "destination": "results/independent/GCN_noabundance/metrics_per_fold.csv"
+    },
+    {
+      "source": "GCN_version_nature_data/GCN-SA-main/mult_result/GCN_noabundance/metrics_summary.csv",
+      "sha256": "86fd5bdffb07691e07005f7ea76a2784bd5763a626f961c0a8390a14b03c77e4",
+      "destination": "results/independent/GCN_noabundance/metrics_summary.csv"
+    },
+    {
+      "source": "GCN_version_nature_data/GCN-SA-main/mult_result/GCN_nodeepseek/metrics_per_class.csv",
+      "sha256": "8c31e7b83bc661d2ceef2980a32fe6a6c280f12318a60dc70e630fae88471f26",
+      "destination": "results/independent/GCN_nodeepseek/metrics_per_class.csv"
+    },
+    {
+      "source": "GCN_version_nature_data/GCN-SA-main/mult_result/GCN_nodeepseek/metrics_per_fold.csv",
+      "sha256": "72712f4909aff6c1b7e38c5512231efc7a921dee5bccf72df2e23bc0c8b033cb",
+      "destination": "results/independent/GCN_nodeepseek/metrics_per_fold.csv"
+    },
+    {
+      "source": "GCN_version_nature_data/GCN-SA-main/mult_result/GCN_nodeepseek/metrics_summary.csv",
+      "sha256": "7fe3ce1868f372a7e670e2f93b2df3dc90bfc26c207aa0696753ab7ff26663ad",
+      "destination": "results/independent/GCN_nodeepseek/metrics_summary.csv"
+    },
+    {
+      "source": "GCN_version_nature_data/GCN-SA-main/mult_result/MLP/metrics_per_fold.csv",
+      "sha256": "ffef10959a6fd336e3d81942a18c37e6ec9c64d09438cd567915850dc5b79290",
+      "destination": "results/independent/MLP/metrics_per_fold.csv"
+    },
+    {
+      "source": "GCN_version_nature_data/GCN-SA-main/mult_result/MLP/metrics_summary.csv",
+      "sha256": "e10d529bc11f2aa6f8986945d9c079e1d5c109e926aa7bfb959fee2a00344733",
+      "destination": "results/independent/MLP/metrics_summary.csv"
+    },
+    {
+      "source": "GCN_version_nature_data/GCN-SA-main/mult_result/MLP_noabundance/metrics_per_fold.csv",
+      "sha256": "735a94a565503f1ea1d2bbff1463a10414285758bd6799808083badfdc61275f",
+      "destination": "results/independent/MLP_noabundance/metrics_per_fold.csv"
+    },
+    {
+      "source": "GCN_version_nature_data/GCN-SA-main/mult_result/MLP_noabundance/metrics_summary.csv",
+      "sha256": "ecc3077ed401d9e3400fc46cf20183c6584dcbff2d69381050488c0b8d5b2b09",
+      "destination": "results/independent/MLP_noabundance/metrics_summary.csv"
+    },
+    {
+      "source": "GCN_version_nature_data/GCN-SA-main/mult_result/MLP_nodeepseek/metrics_per_fold.csv",
+      "sha256": "1bc76fff812ee4733926ec77d8d8b6649bd69202c105f5f34ee03a4adad9a9cf",
+      "destination": "results/independent/MLP_nodeepseek/metrics_per_fold.csv"
+    },
+    {
+      "source": "GCN_version_nature_data/GCN-SA-main/mult_result/MLP_nodeepseek/metrics_summary.csv",
+      "sha256": "bb9e449a53fe44e19255b0d3766c56aa5f4b9ae9c9d1a32b9004f06f9b3514e9",
+      "destination": "results/independent/MLP_nodeepseek/metrics_summary.csv"
+    },
+    {
+      "source": "GCN_version_nature_data/GCN-SA-main/mult_result/Meta-Spec/metrics_per_fold.csv",
+      "sha256": "9f2b3350750a4f7890d123ba47042a2ddc0f685141fa31f1359eac1eb72629fd",
+      "destination": "results/independent/Meta-Spec/metrics_per_fold.csv"
+    },
+    {
+      "source": "GCN_version_nature_data/GCN-SA-main/mult_result/Meta-Spec/metrics_summary.csv",
+      "sha256": "db58a87526b851597068ab0302ca81b0f4ef55a21608cf423f8a6d11b5493c6c",
+      "destination": "results/independent/Meta-Spec/metrics_summary.csv"
+    },
+    {
+      "source": "GCN_version_nature_data/GCN-SA-main/mult_result/Meta-Spec/per_class_metrics_per_fold.csv",
+      "sha256": "2bcb9f14eb7e98cd074f11d43ce28d93b9d8d51de316456d68447ce89cdd83d2",
+      "destination": "results/independent/Meta-Spec/per_class_metrics_per_fold.csv"
+    },
+    {
+      "source": "GCN_version_nature_data/GCN-SA-main/mult_result/Meta-Spec_noabundance/metrics_per_fold.csv",
+      "sha256": "8c73354422623d3274658e33de1da02dfa099da04e74c73f975622e7a3022638",
+      "destination": "results/independent/Meta-Spec_noabundance/metrics_per_fold.csv"
+    },
+    {
+      "source": "GCN_version_nature_data/GCN-SA-main/mult_result/Meta-Spec_noabundance/metrics_summary.csv",
+      "sha256": "c8c6467b3fe00973a3efb47a1898a840f17e079fe5f0c84eb3a421a05db14657",
+      "destination": "results/independent/Meta-Spec_noabundance/metrics_summary.csv"
+    },
+    {
+      "source": "GCN_version_nature_data/GCN-SA-main/mult_result/Meta-Spec_noabundance/per_class_metrics_per_fold.csv",
+      "sha256": "63e50d32c602a2f0d27fa519c439f140760dea17e4e1a7b02db1f98e3c9ad55f",
+      "destination": "results/independent/Meta-Spec_noabundance/per_class_metrics_per_fold.csv"
+    },
+    {
+      "source": "GCN_version_nature_data/GCN-SA-main/mult_result/Meta-Spec_nodeepseek/metrics_per_fold.csv",
+      "sha256": "d2686c6d5ff1427c02b0b3fa092a7f0654af484f3947eeed7c5c5bb4ecd667bd",
+      "destination": "results/independent/Meta-Spec_nodeepseek/metrics_per_fold.csv"
+    },
+    {
+      "source": "GCN_version_nature_data/GCN-SA-main/mult_result/Meta-Spec_nodeepseek/metrics_summary.csv",
+      "sha256": "bb102c7aa4d89df519c09d6c0cb5a73097921ec2997e5dd08d90b3006bdca702",
+      "destination": "results/independent/Meta-Spec_nodeepseek/metrics_summary.csv"
+    },
+    {
+      "source": "GCN_version_nature_data/GCN-SA-main/mult_result/Meta-Spec_nodeepseek/per_class_metrics_per_fold.csv",
+      "sha256": "7551bc325e852cdf76e580adfe8545b0f8ebda22b0f710a839e4a426cd20dc61",
+      "destination": "results/independent/Meta-Spec_nodeepseek/per_class_metrics_per_fold.csv"
+    },
+    {
+      "source": "GCN_version_nature_data/GCN-SA-main/mult_result/Mixhop/metrics_per_fold.csv",
+      "sha256": "9295cbf8bb845f459819011da1e32ca15e352ef8b8ef9dd97cc64ee62724091f",
+      "destination": "results/independent/Mixhop/metrics_per_fold.csv"
+    },
+    {
+      "source": "GCN_version_nature_data/GCN-SA-main/mult_result/Mixhop/metrics_summary.csv",
+      "sha256": "dd2e26a7340bb32055e4c1e1cba30de94cf41d9d43e79983eda8335580348bc5",
+      "destination": "results/independent/Mixhop/metrics_summary.csv"
+    },
+    {
+      "source": "GCN_version_nature_data/GCN-SA-main/mult_result/Mixhop_noabundance/metrics_per_fold.csv",
+      "sha256": "c49386e1910c67f9c1971452793db35bdae773457bafe0b19a3f0ac2b3c76a3b",
+      "destination": "results/independent/Mixhop_noabundance/metrics_per_fold.csv"
+    },
+    {
+      "source": "GCN_version_nature_data/GCN-SA-main/mult_result/Mixhop_noabundance/metrics_summary.csv",
+      "sha256": "6cf43ed3e21ec0cd0000fdd775f6ea1015d8c6dc6883e1eb0daa92aebb8a0000",
+      "destination": "results/independent/Mixhop_noabundance/metrics_summary.csv"
+    },
+    {
+      "source": "GCN_version_nature_data/GCN-SA-main/mult_result/Mixhop_nodeepseek/metrics_per_fold.csv",
+      "sha256": "9b97c492e5617e79dbeb99a94261ed6b842b92e942f0242cc0749ff519ef514b",
+      "destination": "results/independent/Mixhop_nodeepseek/metrics_per_fold.csv"
+    },
+    {
+      "source": "GCN_version_nature_data/GCN-SA-main/mult_result/Mixhop_nodeepseek/metrics_summary.csv",
+      "sha256": "94d926072a7d3c70e03e1a9e665f2202ae263f5987be355e34e1b4f9a08b159e",
+      "destination": "results/independent/Mixhop_nodeepseek/metrics_summary.csv"
+    },
+    {
+      "source": "GCN_version_nature_data/GCN-SA-main/mult_result/Ours/metrics_per_fold.csv",
+      "sha256": "ab2832f39a0a406343846378a550a66c82e9b1d391dc988739e832ecda709b8d",
+      "destination": "results/independent/Ours/metrics_per_fold.csv"
+    },
+    {
+      "source": "GCN_version_nature_data/GCN-SA-main/mult_result/Ours/metrics_summary.csv",
+      "sha256": "3f93697e28b704a81135b19fc6618b05dc48b9541988a2ad671d4cae8aa2eb04",
+      "destination": "results/independent/Ours/metrics_summary.csv"
+    },
+    {
+      "source": "GCN_version_nature_data/GCN-SA-main/mult_result/Ours/per_class_metrics_per_fold.csv",
+      "sha256": "690a04ba48adb95722d227adfafc5fecb8f806afcfe81d4025f40caad771eed1",
+      "destination": "results/independent/Ours/per_class_metrics_per_fold.csv"
+    },
+    {
+      "source": "GCN_version_nature_data/GCN-SA-main/mult_result/Ours_noabundance/metrics_per_fold.csv",
+      "sha256": "0d68fcb3067fefa543b58ec37471c22242c80dd8b8f1cbd9d2ca5c566c0d4920",
+      "destination": "results/independent/Ours_noabundance/metrics_per_fold.csv"
+    },
+    {
+      "source": "GCN_version_nature_data/GCN-SA-main/mult_result/Ours_noabundance/metrics_summary.csv",
+      "sha256": "85fd99fff43673e8e2359aeef03f3a606d2a50bab147f26abcae53dc4bfbfdfc",
+      "destination": "results/independent/Ours_noabundance/metrics_summary.csv"
+    },
+    {
+      "source": "GCN_version_nature_data/GCN-SA-main/mult_result/Ours_noabundance/per_class_metrics_per_fold.csv",
+      "sha256": "5b97bf8f06701ff7366692e5b6c85f90193015a8121f3fc4f409292e7bf608bf",
+      "destination": "results/independent/Ours_noabundance/per_class_metrics_per_fold.csv"
+    },
+    {
+      "source": "GCN_version_nature_data/GCN-SA-main/mult_result/Ours_nodeepseek/metrics_per_fold.csv",
+      "sha256": "76136806b46f9435f0b2e89e3f42c46cec6fa777dfdfba2183ca4fa351d02498",
+      "destination": "results/independent/Ours_nodeepseek/metrics_per_fold.csv"
+    },
+    {
+      "source": "GCN_version_nature_data/GCN-SA-main/mult_result/Ours_nodeepseek/metrics_summary.csv",
+      "sha256": "b259cf107f9722b2529547d7dc26823b22971d598289e98e6141eea736a51607",
+      "destination": "results/independent/Ours_nodeepseek/metrics_summary.csv"
+    },
+    {
+      "source": "GCN_version_nature_data/GCN-SA-main/mult_result/Ours_nodeepseek/per_class_metrics_per_fold.csv",
+      "sha256": "f8d8b2f3fae9ce1189701fd9be107226453d1e760273a0cbdaef42c7e86e9c91",
+      "destination": "results/independent/Ours_nodeepseek/per_class_metrics_per_fold.csv"
+    },
+    {
+      "source": "GCN_version_nature_data/GCN-SA-main/mult_result/Random_Forest/metrics_per_fold.csv",
+      "sha256": "23e9ee51718697f3afe1d2056f32187c1da2c59403abb387ac26175d98388d59",
+      "destination": "results/independent/Random_Forest/metrics_per_fold.csv"
+    },
+    {
+      "source": "GCN_version_nature_data/GCN-SA-main/mult_result/Random_Forest/metrics_summary.csv",
+      "sha256": "9367d8d67fd331e0a0e1b4c11885f7b90da8f9a10b1bf173194d6fc8f964b198",
+      "destination": "results/independent/Random_Forest/metrics_summary.csv"
+    },
+    {
+      "source": "GCN_version_nature_data/GCN-SA-main/mult_result/Random_Forest_noabundance/metrics_per_fold.csv",
+      "sha256": "27b293dbd17bbfa6022c619a3237c190a48440866a4f66928582594401a5b9bf",
+      "destination": "results/independent/Random_Forest_noabundance/metrics_per_fold.csv"
+    },
+    {
+      "source": "GCN_version_nature_data/GCN-SA-main/mult_result/Random_Forest_noabundance/metrics_summary.csv",
+      "sha256": "60888691e9c321d2537907806c31277cca8e05587423df5c6a6be357185b3156",
+      "destination": "results/independent/Random_Forest_noabundance/metrics_summary.csv"
+    },
+    {
+      "source": "GCN_version_nature_data/GCN-SA-main/mult_result/Random_Forest_nodeepseek/metrics_per_fold.csv",
+      "sha256": "77c754cd4cbf855def2548894b6a49df27a59b2db899a8f7490bf63b00bf04b1",
+      "destination": "results/independent/Random_Forest_nodeepseek/metrics_per_fold.csv"
+    },
+    {
+      "source": "GCN_version_nature_data/GCN-SA-main/mult_result/Random_Forest_nodeepseek/metrics_summary.csv",
+      "sha256": "ace3cbfab4bdd267d979d7138a6035f4bbaeb4ffa1de1a26c0e9633d52bb8527",
+      "destination": "results/independent/Random_Forest_nodeepseek/metrics_summary.csv"
+    },
+    {
+      "source": "GCN_version_nature_data_gmhi/GCN-SA-main/GCN-SA/output_only_otu_info_mult_disease_deepseek_two_one_only_group_4347_no_structure_7.30_braycurtis/metrics_per_fold.csv",
+      "destination": "results/primary/MetaDual_no_structure/metrics_per_fold.csv",
+      "sha256": "7b5846c2e1c07aee904a3ad254c806399cc06c01b0d7a7a2421fad4542bd5646"
+    },
+    {
+      "source": "GCN_version_nature_data_gmhi/GCN-SA-main/GCN-SA/output_only_otu_info_mult_disease_deepseek_two_one_only_group_4347_no_structure_7.30_braycurtis/metrics_summary.csv",
+      "destination": "results/primary/MetaDual_no_structure/metrics_summary.csv",
+      "sha256": "8b8ff28f41f39729dcc94d4b55629b5be63e7b08dc30a32060d8a9ae212021ba"
+    },
+    {
+      "source": "GCN_version_nature_data_gmhi/GCN-SA-main/GCN-SA/output_only_otu_info_mult_disease_deepseek_two_one_only_group_4347_no_structure_7.30_braycurtis/per_class_metrics_per_fold.csv",
+      "destination": "results/primary/MetaDual_no_structure/per_class_metrics_per_fold.csv",
+      "sha256": "9c3c442e5681a85e7338506d4e98daec2eb775eae849fe268b8b6eba468559fa"
+    },
+    {
+      "source": "GCN_version_nature_data_gmhi/GCN-SA-main/GCN-SA/output_only_otu_info_mult_disease_deepseek_two_one_only_group_4347_no_modifiedt_7.30_braycurtis/metrics_per_fold.csv",
+      "destination": "results/primary/MetaDual_no_modifiedt_1/metrics_per_fold.csv",
+      "sha256": "65a8e992ebeffca8d1f6f4c2ab5741683233bb264d7ccdfe77be9b05d16bf4db"
+    },
+    {
+      "source": "GCN_version_nature_data_gmhi/GCN-SA-main/GCN-SA/output_only_otu_info_mult_disease_deepseek_two_one_only_group_4347_no_modifiedt_7.30_braycurtis/metrics_summary.csv",
+      "destination": "results/primary/MetaDual_no_modifiedt_1/metrics_summary.csv",
+      "sha256": "cb45a77e3b71fbe950c4c913c2ef3e86ecedc99df9d14c364c90f553bec8a44b"
+    },
+    {
+      "source": "GCN_version_nature_data_gmhi/GCN-SA-main/GCN-SA/output_only_otu_info_mult_disease_deepseek_two_one_only_group_4347_no_modifiedt_7.30_braycurtis/per_class_metrics_per_fold.csv",
+      "destination": "results/primary/MetaDual_no_modifiedt_1/per_class_metrics_per_fold.csv",
+      "sha256": "3de1a2a6a477c8394d8774bb2f0376375daf5c43113eaba8129c4a1dbc5ca311"
+    },
+    {
+      "source": "GCN_version_nature_data_gmhi/GCN-SA-main/GCN-SA/output_only_otu_info_mult_disease_deepseek_two_one_only_group_4347_modifiedt_back_7.30_braycurtis/metrics_per_fold.csv",
+      "destination": "results/primary/MetaDual_no_modifiedt_2/metrics_per_fold.csv",
+      "sha256": "944b4449fc04a33cc3f2c49ae45679eff9a0b60128f983f2d6b98912d35ccd65"
+    },
+    {
+      "source": "GCN_version_nature_data_gmhi/GCN-SA-main/GCN-SA/output_only_otu_info_mult_disease_deepseek_two_one_only_group_4347_modifiedt_back_7.30_braycurtis/metrics_summary.csv",
+      "destination": "results/primary/MetaDual_no_modifiedt_2/metrics_summary.csv",
+      "sha256": "d26c1837f0a07b898a1d1c9a75cfd47d3dbbe8b4e34dd091be4a196dbc530e6b"
+    },
+    {
+      "source": "GCN_version_nature_data_gmhi/GCN-SA-main/GCN-SA/output_only_otu_info_mult_disease_deepseek_two_one_only_group_4347_modifiedt_back_7.30_braycurtis/per_class_metrics_per_fold.csv",
+      "destination": "results/primary/MetaDual_no_modifiedt_2/per_class_metrics_per_fold.csv",
+      "sha256": "1ddaca8f63e84e069726d1e12f2bd803291f9af8bb0744db602137e856425454"
+    }
+  ],
+  "derived_files": [
+    {
+      "destination": "data_processing/data/independent_features.npz",
+      "source": "data/final_multi_disease_all_features_768_one_2577_5_only_group_search_93.npz",
+      "operation": "np.savez_compressed; all original array values and dtypes verified identical",
+      "sha256": "62ad10d6b1ef4c69d2cfd32ff67a410fc6160a9ee9b3ce46e339463570b266be",
+      "size_bytes": 41444319
+    }
+  ]
+}

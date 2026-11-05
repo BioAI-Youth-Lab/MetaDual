@@ -1,0 +1,12 @@
+{
+  "round": 3,
+  "round2_best_score": 0.9208666667,
+  "best_fused_score_round3": 0.9208666667,
+  "successful_fused_count": 0,
+  "target_successful_count": 3,
+  "distance_matrix_csv": "/home/data/yww/LLM/comp/got/prompt1/GCN-SA/prompt_logs_manual/prompt_cosine_distance_matrix_round3.csv",
+  "pair_ranking_csv": "/home/data/yww/LLM/comp/got/prompt1/GCN-SA/prompt_logs_manual/prompt_pair_distance_rankings_round3.csv",
+  "attempts_csv": "/home/data/yww/LLM/comp/got/prompt1/GCN-SA/prompt_logs_manual/prompt_pair_attempts_round3.csv",
+  "kept_runs_path": "/home/data/yww/LLM/comp/got/prompt1/GCN-SA/prompt_logs_manual/prompt_pair_kept_runs_round3.json",
+  "kept_runs": []
+}

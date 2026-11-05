@@ -31,6 +31,8 @@ class EvaluationConfig:
     epochs: int = 2000
     patience: int = 100
     repeats: int = 5
+    top_k_species: int = 50
+    score_split: str = "validation"
 
 
 def validation_subset(csv_path):
@@ -72,7 +74,7 @@ class PromptEvaluator:
         values = self.dataset["X_otu_abundance"][index]
         # Stable sort preserves the original dictionary insertion order for tied abundances.
         top = np.argsort(-values, kind="stable")
-        top = [i for i in top if values[i] > 0][:100]
+        top = [i for i in top if values[i] > 0][:self.config.top_k_species]
         otu_text = "\n".join(f"- {self.dataset['otu_names'][i]}: {values[i]:.5f}" for i in top)
         if not otu_text:
             return None
@@ -158,10 +160,11 @@ class PromptEvaluator:
                                      patience=self.config.patience, repeats=self.config.repeats,
                                      k_neighbors=5, metric="cosine", device=self.config.device)
             # The original scorer did not reseed the CPU torch generator for each prompt.
+            selection_options = {"evaluation_split": "validation"} if self.config.score_split == "validation" else {}
             training = run_experiment(npz_path, directory / "gcn", GCNSA_two_graph,
-                                      profile, variant="prompt_scorer", seed_torch=False)
+                                      profile, variant="prompt_scorer", seed_torch=False, **selection_options)
             score = training["pooled_macro_auc"]
-            used_metric = "pooled_macro_auc_ovr"
+            used_metric = f"{self.config.score_split}_pooled_macro_auc_ovr"
             if not math.isfinite(score):
                 score = training["mean_accuracy"]
                 used_metric = "mean_accuracy_fallback"
