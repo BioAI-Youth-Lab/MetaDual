@@ -1,0 +1,156 @@
+{
+  "started_utc": "20261104T124646_388159Z",
+  "python": "3.10.16",
+  "torch": "2.7.0+cu126",
+  "cuda_build": "12.6",
+  "external_api_calls": 0,
+  "checks": {
+    "copied_files": {
+      "count": 68,
+      "status": "all hashes match"
+    },
+    "data": {
+      "shape": {
+        "X_otu_abundance": [
+          4012,
+          903
+        ],
+        "X_text_embedding": [
+          4012,
+          1536
+        ],
+        "y": [
+          4012,
+          7
+        ]
+      },
+      "class_counts": [
+        152,
+        298,
+        108,
+        2636,
+        342,
+        238,
+        238
+      ],
+      "abundance_and_labels": "array-identical reconstruction",
+      "fcg_records": 4347,
+      "full_embedding_merge": "all 4012 rows array-identical to supplied final NPZ",
+      "representative_fresh_embeddings": {
+        "samples": 3,
+        "max_absolute_errors": [
+          2.86102294921875e-06,
+          1.9371509552001953e-06,
+          1.6391277313232422e-06
+        ]
+      }
+    },
+    "prompts": {
+      "counts": [
+        30,
+        15,
+        8
+      ],
+      "best_hash": "168f2812",
+      "mocked_checks": [
+        "deduplication without refill",
+        "partial aggregation",
+        "insufficient parents",
+        "200-sample FCG/embedding/scorer integration",
+        "per-run evaluation cache",
+        "invalid placeholder"
+      ],
+      "external_api_calls": 0
+    },
+    "training": {
+      "full": {
+        "epochs": 1,
+        "samples": 40,
+        "device": "cpu",
+        "status": "passed"
+      },
+      "no_modifiedt_1": {
+        "epochs": 1,
+        "samples": 40,
+        "device": "cpu",
+        "status": "passed"
+      },
+      "no_modifiedt_2": {
+        "epochs": 1,
+        "samples": 40,
+        "device": "cpu",
+        "status": "passed"
+      },
+      "no_structure": {
+        "epochs": 1,
+        "samples": 40,
+        "device": "cpu",
+        "status": "passed"
+      },
+      "prompt_scorer": {
+        "epochs": 1,
+        "samples": 40,
+        "device": "cpu",
+        "status": "passed"
+      }
+    },
+    "original_numerical_comparison": {
+      "graph_comparisons": {
+        "main": "exact numerical equality",
+        "prompt": "exact numerical equality"
+      },
+      "network_comparisons": {
+        "full": {
+          "eval_max_absolute_error": 0.0,
+          "train_max_absolute_error": 0.0,
+          "gradient_max_absolute_error": 0.0,
+          "state_dict_keys": 35
+        },
+        "no_modifiedt_1": {
+          "eval_max_absolute_error": 0.0,
+          "train_max_absolute_error": 0.0,
+          "gradient_max_absolute_error": 0.0,
+          "state_dict_keys": 25
+        },
+        "no_modifiedt_2": {
+          "eval_max_absolute_error": 0.0,
+          "train_max_absolute_error": 0.0,
+          "gradient_max_absolute_error": 0.0,
+          "state_dict_keys": 15
+        },
+        "no_structure": {
+          "eval_max_absolute_error": 0.0,
+          "train_max_absolute_error": 0.0,
+          "gradient_max_absolute_error": 0.0,
+          "state_dict_keys": 29
+        },
+        "prompt_scorer": {
+          "eval_max_absolute_error": 0.0,
+          "train_max_absolute_error": 0.0,
+          "gradient_max_absolute_error": 0.0,
+          "state_dict_keys": 35
+        }
+      }
+    },
+    "source_integrity": {
+      "files": 305,
+      "all_unchanged": true
+    },
+    "interfaces": {
+      "notebook_cells": 15,
+      "offline_notebook_execution": "passed",
+      "command_help_and_history": "passed",
+      "batch_shell_syntax": "passed"
+    },
+    "export_scan": {
+      "credential_scan": "passed",
+      "hardcoded_machine_path_scan": "passed",
+      "files_over_100_MiB": []
+    }
+  },
+  "status": "passed",
+  "limits": [
+    "No full-length training or paid API generation was run.",
+    "Fresh text embeddings were checked on representative samples only when local model files were available."
+  ]
+}

@@ -1,0 +1,9 @@
+# Runtime versions observed in deepseek_env_got.
+numpy==1.26.4
+scipy==1.15.3
+pandas==2.2.3
+scikit-learn==1.6.1
+torch==2.7.0
+transformers==4.51.3
+openai==1.77.0
+tqdm==4.67.1

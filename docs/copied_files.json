@@ -1,0 +1,342 @@
+[
+  {
+    "source": "data_gmhi/4347_final_relative_abundances.csv",
+    "destination": "data_processing/data/4347_final_relative_abundances.csv",
+    "sha256": "6a163cf813389794c76f03805b410b816cdc8a40fabea85e8e1cf22a760fb23a"
+  },
+  {
+    "source": "data_gmhi/filtered_otu.csv",
+    "destination": "data_processing/data/prompt_validation.csv",
+    "sha256": "58fedc561c025170ade176772cc59710269c89e91886d9cb20e54d9c8738dacc"
+  },
+  {
+    "source": "data_gmhi/deepseek_top100_network_analysis_4347.jsonl",
+    "destination": "data_processing/data/fcg_results.jsonl",
+    "sha256": "33d84405c069f931dc9a3a1eeb79b091449b947a3e5a9c7c70e4c2dea1dfdf39"
+  },
+  {
+    "source": "data_gmhi/final_multi_disease_all_features_768_one_4347_5_only_group_search_93.npz",
+    "destination": "data_processing/data/final_features.npz",
+    "sha256": "c84c10ca63c4915eb977f4cef617c71defb26cb4ed8d443601c6b67101f1580d"
+  },
+  {
+    "source": "comp/got/prompt1/GCN-SA/prompt_logs_manual/fused_prompts_ranked_no_agg.json",
+    "destination": "prompt_search/history/fused_prompts_ranked_no_agg.json",
+    "sha256": "79e9983585d77cf68d3af4d3642cf2af175b2fd68cd8fcff8d5b3bc1c57f0584"
+  },
+  {
+    "source": "comp/got/prompt1/GCN-SA/prompt_logs_manual/fused_prompts_round2_ranked_no_agg.json",
+    "destination": "prompt_search/history/fused_prompts_round2_ranked_no_agg.json",
+    "sha256": "d9b2ecafd7b6ecdc72453ff5912ac5e958409ec14db86c5130e118839f75ed27"
+  },
+  {
+    "source": "comp/got/prompt1/GCN-SA/prompt_logs_manual/prompt_00c95bd9.json",
+    "destination": "prompt_search/history/individual/prompt_00c95bd9.json",
+    "sha256": "a88a5acd379165b9ec68cc4bf38ab603b506b956dd98f699f89748ea4fc334d4"
+  },
+  {
+    "source": "comp/got/prompt1/GCN-SA/prompt_logs_manual/prompt_02676f4e.json",
+    "destination": "prompt_search/history/individual/prompt_02676f4e.json",
+    "sha256": "c1108dff781470a86aed57146cf94fbe59e028c084dc78556fa80ec0796b5656"
+  },
+  {
+    "source": "comp/got/prompt1/GCN-SA/prompt_logs_manual/prompt_0578ad47.json",
+    "destination": "prompt_search/history/individual/prompt_0578ad47.json",
+    "sha256": "c74c9ac5891f67853943b0a186b28e549adfffebc809010da1feb88d6a99ec0e"
+  },
+  {
+    "source": "comp/got/prompt1/GCN-SA/prompt_logs_manual/prompt_0be97ea3.json",
+    "destination": "prompt_search/history/individual/prompt_0be97ea3.json",
+    "sha256": "b28718955a26df5bb05f7465b72db53101f514f132b8ed128fe0e7f0db708ffb"
+  },
+  {
+    "source": "comp/got/prompt1/GCN-SA/prompt_logs_manual/prompt_0f90b984.json",
+    "destination": "prompt_search/history/individual/prompt_0f90b984.json",
+    "sha256": "5035e3b40df241fa504407f938fdf6f8e18eeb3ed7f50fa3557dc4a407be72dc"
+  },
+  {
+    "source": "comp/got/prompt1/GCN-SA/prompt_logs_manual/prompt_16749a98.json",
+    "destination": "prompt_search/history/individual/prompt_16749a98.json",
+    "sha256": "e1a5f8a00ed0aae0d5f7ab07d8ed155460b4a6c3854a5eafb5d714013f616cbf"
+  },
+  {
+    "source": "comp/got/prompt1/GCN-SA/prompt_logs_manual/prompt_168f2812.json",
+    "destination": "prompt_search/history/individual/prompt_168f2812.json",
+    "sha256": "d4a673a1b6dbd664b5d80f36d5d376ca9a7dde7fc0871f7aadc84ac535b80824"
+  },
+  {
+    "source": "comp/got/prompt1/GCN-SA/prompt_logs_manual/prompt_18da4fa1.json",
+    "destination": "prompt_search/history/individual/prompt_18da4fa1.json",
+    "sha256": "ede0e614ffe076e375da3b549c1cb62960904fcc4f2c3a97cf426a7c0f35db8a"
+  },
+  {
+    "source": "comp/got/prompt1/GCN-SA/prompt_logs_manual/prompt_1d661712.json",
+    "destination": "prompt_search/history/individual/prompt_1d661712.json",
+    "sha256": "7c29b4cb23bde958dcffdbcbcb68e99268f1e707d54d9d7807750b4e6340a960"
+  },
+  {
+    "source": "comp/got/prompt1/GCN-SA/prompt_logs_manual/prompt_288d31dd.json",
+    "destination": "prompt_search/history/individual/prompt_288d31dd.json",
+    "sha256": "089c7e21227a0fe4681956e7e2d1bc35e9a70a2360fc5dc0fbf4e07349557266"
+  },
+  {
+    "source": "comp/got/prompt1/GCN-SA/prompt_logs_manual/prompt_2bf01adf.json",
+    "destination": "prompt_search/history/individual/prompt_2bf01adf.json",
+    "sha256": "baf015c5da0f09761d0d3b7c0bf544d0e541935d493e7132353a05d81d5e889b"
+  },
+  {
+    "source": "comp/got/prompt1/GCN-SA/prompt_logs_manual/prompt_2f28a35c.json",
+    "destination": "prompt_search/history/individual/prompt_2f28a35c.json",
+    "sha256": "f1971e11cbe21385bcf577e1fbed721b91550763ee18717982f4f26fff8d3d20"
+  },
+  {
+    "source": "comp/got/prompt1/GCN-SA/prompt_logs_manual/prompt_3a605dcb.json",
+    "destination": "prompt_search/history/individual/prompt_3a605dcb.json",
+    "sha256": "722119649ceb2398ce49e96fcfe7626530a6362b0054b0892a0add71199dadfe"
+  },
+  {
+    "source": "comp/got/prompt1/GCN-SA/prompt_logs_manual/prompt_4017efbc.json",
+    "destination": "prompt_search/history/individual/prompt_4017efbc.json",
+    "sha256": "96bece53d0e36cd52ab0e188be88d35b4fee3bff77203d59c85731b54ea2dfc1"
+  },
+  {
+    "source": "comp/got/prompt1/GCN-SA/prompt_logs_manual/prompt_40bed7eb.json",
+    "destination": "prompt_search/history/individual/prompt_40bed7eb.json",
+    "sha256": "4a874a6a32190a6b3a04863b541b6e552a7dc26829c4815407bbd1e29ec6b4c9"
+  },
+  {
+    "source": "comp/got/prompt1/GCN-SA/prompt_logs_manual/prompt_49285c4b.json",
+    "destination": "prompt_search/history/individual/prompt_49285c4b.json",
+    "sha256": "621ea036b381faa5cd7c9d8e972bd59386f073d5f9bf5e407a9b3b7a06ecd3c5"
+  },
+  {
+    "source": "comp/got/prompt1/GCN-SA/prompt_logs_manual/prompt_53e91c00.json",
+    "destination": "prompt_search/history/individual/prompt_53e91c00.json",
+    "sha256": "375d13b606b41c4b1eb5ebb58fe1d4da93271ccd1a3324203125db657a4fe6a6"
+  },
+  {
+    "source": "comp/got/prompt1/GCN-SA/prompt_logs_manual/prompt_5ea16363.json",
+    "destination": "prompt_search/history/individual/prompt_5ea16363.json",
+    "sha256": "430c2b74bb2c32697c6eee0ec9b85572983b69dec0d1894654133b1db333823f"
+  },
+  {
+    "source": "comp/got/prompt1/GCN-SA/prompt_logs_manual/prompt_68bbb4f8.json",
+    "destination": "prompt_search/history/individual/prompt_68bbb4f8.json",
+    "sha256": "ab70ccd42634f1f09fb680855a1028e21a8566f5b7557a64d6c50f6a1e0208d2"
+  },
+  {
+    "source": "comp/got/prompt1/GCN-SA/prompt_logs_manual/prompt_6a78f232.json",
+    "destination": "prompt_search/history/individual/prompt_6a78f232.json",
+    "sha256": "d3d3d77675389e62b2c5f5471e273a7515ced00a922ab70b0eccb0170a915eec"
+  },
+  {
+    "source": "comp/got/prompt1/GCN-SA/prompt_logs_manual/prompt_6e70f579.json",
+    "destination": "prompt_search/history/individual/prompt_6e70f579.json",
+    "sha256": "52b788f13608d466b37d71b7fb54bec784550461a16f7fbe1812afff74ddac92"
+  },
+  {
+    "source": "comp/got/prompt1/GCN-SA/prompt_logs_manual/prompt_701b47b1.json",
+    "destination": "prompt_search/history/individual/prompt_701b47b1.json",
+    "sha256": "b8878c145dbc0900cf486b23db9a0e877432f2132927f801043e480d92b88186"
+  },
+  {
+    "source": "comp/got/prompt1/GCN-SA/prompt_logs_manual/prompt_766aa4b9.json",
+    "destination": "prompt_search/history/individual/prompt_766aa4b9.json",
+    "sha256": "8851fb5c7fd9a891f71ffc119ced5ff529c20e3ac67ad9d40723c8c81eb7dcd9"
+  },
+  {
+    "source": "comp/got/prompt1/GCN-SA/prompt_logs_manual/prompt_8301d8b1.json",
+    "destination": "prompt_search/history/individual/prompt_8301d8b1.json",
+    "sha256": "71aaa36a98e4f44adc441239cb4573a7f27f007693eeaa590130e9265931df88"
+  },
+  {
+    "source": "comp/got/prompt1/GCN-SA/prompt_logs_manual/prompt_84963566.json",
+    "destination": "prompt_search/history/individual/prompt_84963566.json",
+    "sha256": "6a662860ffbd30f46827ac48be0354c2cc2b7992b751d52734b985be4f6e0431"
+  },
+  {
+    "source": "comp/got/prompt1/GCN-SA/prompt_logs_manual/prompt_88c2b0e7.json",
+    "destination": "prompt_search/history/individual/prompt_88c2b0e7.json",
+    "sha256": "7b5c01aa31764085b4556035ed78bfcba8d683b370fcc2d2250be01ddd4febb6"
+  },
+  {
+    "source": "comp/got/prompt1/GCN-SA/prompt_logs_manual/prompt_8992f9ee.json",
+    "destination": "prompt_search/history/individual/prompt_8992f9ee.json",
+    "sha256": "061519512d28d7310bf2fb140451a83ef98db8a2d65c1070308bf061d21e7174"
+  },
+  {
+    "source": "comp/got/prompt1/GCN-SA/prompt_logs_manual/prompt_8eea497b.json",
+    "destination": "prompt_search/history/individual/prompt_8eea497b.json",
+    "sha256": "961fd86c5b2e7a94d62dfba50c79be97a25c5128d7f50f59194c221e8a341201"
+  },
+  {
+    "source": "comp/got/prompt1/GCN-SA/prompt_logs_manual/prompt_92aee956.json",
+    "destination": "prompt_search/history/individual/prompt_92aee956.json",
+    "sha256": "58b130c9d458e425245a76440b1856430f195b561ebfafb1eb9f9f1c9d8c10e0"
+  },
+  {
+    "source": "comp/got/prompt1/GCN-SA/prompt_logs_manual/prompt_92febbf6.json",
+    "destination": "prompt_search/history/individual/prompt_92febbf6.json",
+    "sha256": "5d52e0fe5a2b6888d9c387e67a9c34316f86c9ad940c337587a021b685cf97ce"
+  },
+  {
+    "source": "comp/got/prompt1/GCN-SA/prompt_logs_manual/prompt_9363dfe8.json",
+    "destination": "prompt_search/history/individual/prompt_9363dfe8.json",
+    "sha256": "ada7be4c4351a6fa98a01bfbada2d9dcfb4d6faa34c0681a527f411825a7c674"
+  },
+  {
+    "source": "comp/got/prompt1/GCN-SA/prompt_logs_manual/prompt_9ab87b60.json",
+    "destination": "prompt_search/history/individual/prompt_9ab87b60.json",
+    "sha256": "8f71f4ae8f4ae550f50255a723023c60fb29e561f41e5035e7e129d80373e348"
+  },
+  {
+    "source": "comp/got/prompt1/GCN-SA/prompt_logs_manual/prompt_a0ae3e6d.json",
+    "destination": "prompt_search/history/individual/prompt_a0ae3e6d.json",
+    "sha256": "00cd9570affb34ab342a26042ab2ba956f88f5abda7c3543fee149ece58573be"
+  },
+  {
+    "source": "comp/got/prompt1/GCN-SA/prompt_logs_manual/prompt_a604ccb7.json",
+    "destination": "prompt_search/history/individual/prompt_a604ccb7.json",
+    "sha256": "5cc396c7f1254daa0e5313feb97f0fa3e3f79dc872cdc86d8a86ee0ca4b269ec"
+  },
+  {
+    "source": "comp/got/prompt1/GCN-SA/prompt_logs_manual/prompt_ad2ac558.json",
+    "destination": "prompt_search/history/individual/prompt_ad2ac558.json",
+    "sha256": "cff5e0733bcd1e848f3f7d71a1cdf4ce8766daf4898fda1b44fa3bb5e850be81"
+  },
+  {
+    "source": "comp/got/prompt1/GCN-SA/prompt_logs_manual/prompt_aef1063d.json",
+    "destination": "prompt_search/history/individual/prompt_aef1063d.json",
+    "sha256": "b32e9aa53c7df1e6f0dc01b1134ef049d9ce00f7d9f90ca5ed637d1cef205365"
+  },
+  {
+    "source": "comp/got/prompt1/GCN-SA/prompt_logs_manual/prompt_b0ba1842.json",
+    "destination": "prompt_search/history/individual/prompt_b0ba1842.json",
+    "sha256": "114f71852e2db46b936a30b0c67630a75d29572f46045e1a8fe4b1c57abcf5db"
+  },
+  {
+    "source": "comp/got/prompt1/GCN-SA/prompt_logs_manual/prompt_b94f04ab.json",
+    "destination": "prompt_search/history/individual/prompt_b94f04ab.json",
+    "sha256": "5d317a7f5b5f3de71361da21d8584e34d293b4fbeae8e812bf2a349f3ca31763"
+  },
+  {
+    "source": "comp/got/prompt1/GCN-SA/prompt_logs_manual/prompt_bceecdac.json",
+    "destination": "prompt_search/history/individual/prompt_bceecdac.json",
+    "sha256": "d7cad1b68bf7db1f7ce5e7072ad7e780903dd07c0f9684339840bdffb15a432b"
+  },
+  {
+    "source": "comp/got/prompt1/GCN-SA/prompt_logs_manual/prompt_c8894997.json",
+    "destination": "prompt_search/history/individual/prompt_c8894997.json",
+    "sha256": "6e9e3dbb18d8616a3ec69bd996a74811ac38ee88831f8ec45365fe44d730a50b"
+  },
+  {
+    "source": "comp/got/prompt1/GCN-SA/prompt_logs_manual/prompt_ca243718.json",
+    "destination": "prompt_search/history/individual/prompt_ca243718.json",
+    "sha256": "ae37e32cdad589b4f4462312aea95cc3194a66eb47d44fd94d667388a470c702"
+  },
+  {
+    "source": "comp/got/prompt1/GCN-SA/prompt_logs_manual/prompt_cbc70360.json",
+    "destination": "prompt_search/history/individual/prompt_cbc70360.json",
+    "sha256": "7424db157257922489d6c0c379fde72dd0f53d7f57ec5c21789b3f9435fe96c4"
+  },
+  {
+    "source": "comp/got/prompt1/GCN-SA/prompt_logs_manual/prompt_d221ebbf.json",
+    "destination": "prompt_search/history/individual/prompt_d221ebbf.json",
+    "sha256": "7267748e2d9d27c1135f3f284b78bf45fcd6aabbd73f73ab3dc681e00110e521"
+  },
+  {
+    "source": "comp/got/prompt1/GCN-SA/prompt_logs_manual/prompt_d52043db.json",
+    "destination": "prompt_search/history/individual/prompt_d52043db.json",
+    "sha256": "b774c565c4fe121344334039c96add3d67bf7c6027802f61dc334a158437bae7"
+  },
+  {
+    "source": "comp/got/prompt1/GCN-SA/prompt_logs_manual/prompt_d7dd5b6e.json",
+    "destination": "prompt_search/history/individual/prompt_d7dd5b6e.json",
+    "sha256": "fcd31ec08bb5b9edb727b3f3f4f74ab9bb62296440433f0881935e39b14f8ec7"
+  },
+  {
+    "source": "comp/got/prompt1/GCN-SA/prompt_logs_manual/prompt_debbd64d.json",
+    "destination": "prompt_search/history/individual/prompt_debbd64d.json",
+    "sha256": "3ae786cbd9adbee455e595afd57ddaab1122aaabf194cd2f0e172676bacfdea1"
+  },
+  {
+    "source": "comp/got/prompt1/GCN-SA/prompt_logs_manual/prompt_e7d3340c.json",
+    "destination": "prompt_search/history/individual/prompt_e7d3340c.json",
+    "sha256": "bcea0acb92530e53fc6d8d7aa92efd478dfd43643933a1346b77aba1135d2149"
+  },
+  {
+    "source": "comp/got/prompt1/GCN-SA/prompt_logs_manual/prompt_ea30f3c8.json",
+    "destination": "prompt_search/history/individual/prompt_ea30f3c8.json",
+    "sha256": "6cc1299aa23386a1af8117b41ba69a2cefdf9de4e0baa21f2af718aeea69194d"
+  },
+  {
+    "source": "comp/got/prompt1/GCN-SA/prompt_logs_manual/prompt_efb318c8.json",
+    "destination": "prompt_search/history/individual/prompt_efb318c8.json",
+    "sha256": "ddb1ef2baeafd67d8bc3377619af56e3c2b79bc1753ce127b24160cba49fde91"
+  },
+  {
+    "source": "comp/got/prompt1/GCN-SA/prompt_logs_manual/prompt_eff4013a.json",
+    "destination": "prompt_search/history/individual/prompt_eff4013a.json",
+    "sha256": "6c06e571fbaf3010b2e3ffc9ef3e8b0fbe01b6cf5f962dbe34a863dc086af3f7"
+  },
+  {
+    "source": "comp/got/prompt1/GCN-SA/prompt_logs_manual/prompt_f037659c.json",
+    "destination": "prompt_search/history/individual/prompt_f037659c.json",
+    "sha256": "3bdc7720c01abfe0350d5f64408c2b6c94c2c064b963fcff139293b4ac1e2d0f"
+  },
+  {
+    "source": "comp/got/prompt1/GCN-SA/prompt_logs_manual/prompt_f1992668.json",
+    "destination": "prompt_search/history/individual/prompt_f1992668.json",
+    "sha256": "33aac658407c95eb52d021fc7dbe9ec5af9b14ca4c77786d211b17747d6880ea"
+  },
+  {
+    "source": "comp/got/prompt1/GCN-SA/prompt_logs_manual/prompt_f73103ca.json",
+    "destination": "prompt_search/history/individual/prompt_f73103ca.json",
+    "sha256": "c38dd6de8eeb21a9d6c66f26fdcd1fd107564e781e589d74cf8f7d9eaa60d32c"
+  },
+  {
+    "source": "comp/got/prompt1/GCN-SA/prompt_logs_manual/initial_prompts_ranked_no_agg.json",
+    "destination": "prompt_search/history/initial_prompts_ranked_no_agg.json",
+    "sha256": "f658706542f044475bfbf3c656cbcd61d8251db34426634551bcdb380338ce72"
+  },
+  {
+    "source": "comp/got/prompt1/GCN-SA/prompt_logs_manual/prompt_cosine_distance_matrix.csv",
+    "destination": "prompt_search/history/prompt_cosine_distance_matrix.csv",
+    "sha256": "8344777bcb6c4ce82ac7f5847a2d9909a0860cbd41484f3be99fc70ad5852e49"
+  },
+  {
+    "source": "comp/got/prompt1/GCN-SA/prompt_logs_manual/prompt_cosine_distance_matrix_round2.csv",
+    "destination": "prompt_search/history/prompt_cosine_distance_matrix_round2.csv",
+    "sha256": "ca322d2355b25218faea7ab02bdd12e8cfcf27af6e6beb4e0189801a18b8efde"
+  },
+  {
+    "source": "comp/got/prompt1/GCN-SA/prompt_logs_manual/prompt_quartet_attempts.csv",
+    "destination": "prompt_search/history/prompt_quartet_attempts.csv",
+    "sha256": "575fdc5fa2801285c60e59435a3446ea006c05f2ce3079d3ae8c3af4725ddcec"
+  },
+  {
+    "source": "comp/got/prompt1/GCN-SA/prompt_logs_manual/prompt_quartet_distance_rankings.csv",
+    "destination": "prompt_search/history/prompt_quartet_distance_rankings.csv",
+    "sha256": "61e85836ffbdd7bbdea702e4b4a0cd5d7ecfd4dd6dbb8a05b25d596157c51456"
+  },
+  {
+    "source": "comp/got/prompt1/GCN-SA/prompt_logs_manual/prompt_quartet_kept_runs.json",
+    "destination": "prompt_search/history/prompt_quartet_kept_runs.json",
+    "sha256": "2cd42e6060b14aea5f80f26703e9c4e90aafe63ec22bb874da45c431037cfa17"
+  },
+  {
+    "source": "comp/got/prompt1/GCN-SA/prompt_logs_manual/prompt_triplet_attempts_round2.csv",
+    "destination": "prompt_search/history/prompt_triplet_attempts_round2.csv",
+    "sha256": "a18b96d0a5624c0bf9125e6de9083ea8a3c8ef6c2e3043b1a0c14d387f042972"
+  },
+  {
+    "source": "comp/got/prompt1/GCN-SA/prompt_logs_manual/prompt_triplet_distance_rankings_round2.csv",
+    "destination": "prompt_search/history/prompt_triplet_distance_rankings_round2.csv",
+    "sha256": "3be1a3e990f90fc8a6a716c194263e6f1426f9be8d976ff4d785f89f8fbe8d2f"
+  },
+  {
+    "source": "comp/got/prompt1/GCN-SA/prompt_logs_manual/prompt_triplet_kept_runs_round2.json",
+    "destination": "prompt_search/history/prompt_triplet_kept_runs_round2.json",
+    "sha256": "1dec9a338e9532f2b0f20ff91751291b9d260b0016793a5b7b6b10db594689f0"
+  }
+]

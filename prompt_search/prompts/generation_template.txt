@@ -1,0 +1,26 @@
+You are a senior prompt engineer. Create a new prompt to maximize downstream validation accuracy for identifying functional collaboration groups (FCGs) in gut microbiome data.
+
+        TASK DESCRIPTION (reference):
+        -----------------------------
+        I have extracted the **Top 50 most abundant OTUs** (Operational Taxonomic Units) from a human gut microbiome sample, along with their **relative abundances**.
+Your task is to identify **functional collaboration groups (FCGs)** — small sets of OTUs.
+
+
+REQUIRED OUTPUT FORMAT (must keep EXACTLY as specified):
+-------------------------------------------------------
+### Output Format (Markdown)
+### Functional Collaboration Groups
+- **Group 1**: OTU_001, OTU_007, OTU_014  
+**Function**: ...  
+- **Group 2**: OTU_023, OTU_034, OTU_056, OTU_061  
+**Function**: ...
+
+
+        STRICT REQUIREMENTS:
+        -------------------
+        1) You MUST keep the output format EXACTLY as specified above (no changes to the structure).
+        2) The task LLM will receive an OTU list via a placeholder {otu_text} (keep this placeholder in your final prompt).
+        3) make sure your final prompt explicitly instructs the task LLM to generate at least 10 groups.
+        4) Keep ASCII-friendly punctuation and stable, compact wording in **Function** lines (≤ 1–2 sentences).
+
+        Return ONLY the complete prompt text (no explanations).

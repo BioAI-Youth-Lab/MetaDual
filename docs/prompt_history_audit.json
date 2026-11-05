@@ -1,0 +1,21 @@
+{
+  "authority": "The three final ranked JSON files. Individual files are preserved as historical observations.",
+  "stage_counts": {
+    "initial": 30,
+    "round1": 15,
+    "round2": 8
+  },
+  "best_prompt_hash": "168f2812",
+  "best_score": 0.9338666667,
+  "score_discrepancies": [
+    {
+      "stage": "round1",
+      "prompt_hash": "8301d8b1",
+      "ranked_score": 0.9030333333,
+      "individual_score": 0.9054333333333333
+    }
+  ],
+  "round1_raw_kept_count": 20,
+  "round1_final_ranked_count": 15,
+  "note": "The original notebook manually removed five first-round candidates. Cleaned code has no deletion or refill cells."
+}

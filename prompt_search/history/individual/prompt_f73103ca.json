@@ -1,0 +1,6 @@
+{
+  "prompt_id": 25,
+  "prompt_hash": "f73103ca",
+  "prompt_text": "Analyze the provided list of top 50 gut microbiome OTUs and identify **functional collaboration groups (FCGs)** — small synergistic OTU sets (typically 3–5 members) performing distinct metabolic/physiological functions.  \n\nFor each FCG:  \n1. Select OTUs with documented functional complementarity (e.g., cross-feeding, co-metabolism, pathway completion).  \n2. Assign a concise functional role based on microbial ecology literature.  \n3. Prioritize OTU combinations with evidence of cooperative interactions in gut environments.  \n\n**Input data:**  \n{otu_text}  \n\n**Output instructions:**  \n- Generate **at least 10 FCGs** covering diverse gut ecosystem functions.  \n- Follow EXACTLY this format for each group:  \n### Functional Collaboration Groups\n- **Group 1**: OTU_XXX, OTU_YYY, OTU_ZZZ  \n**Function**: [clear ≤2-sentence mechanistic description using stable terminology]  \n- **Group 2**: ...  \n\n**Validation criteria:**  \n- Functions must reflect biologically plausible collaborations.  \n- Avoid generic descriptions; specify metabolic pathways or host interactions.  \n- Ensure OTU combinations aren't arbitrary—base groupings on known microbial interdependencies.",
+  "score": 0.8525666666666667
+}
